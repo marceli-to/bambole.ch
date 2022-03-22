@@ -1,0 +1,12 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/headings/h2
+ * -----------------------------------------------------------------------------
+ */
+
+h2 {
+  color: $color-dark;
+  @include font-londrina-regular();
+  @include font-size($fs-xl);
+  text-align: center;
+}

@@ -1,0 +1,84 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/widgets/global
+ * -----------------------------------------------------------------------------
+ */
+
+.widget {
+  align-items: center;
+  background-color: rgba(240,240,240,.8);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 401;
+
+  > div {
+    background-color: $color-white;
+    border-radius: 4px;
+    position: relative;
+    width: 560px;
+  }
+
+  header {
+    border-bottom: 2px solid $color-light;
+    @include responsive-prop('padding', $space-sm);
+  }
+
+  h1 {
+    color: $color-primary;
+    margin-bottom: 0;
+  }
+
+  .btn-close {
+    color: $color-light-grey;
+    right: 20px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .widget__inner {
+    position: relative;
+  }
+  
+  .widget-content {
+    max-height: 400px;
+    @include responsive-prop('padding', $space-sm);
+    overflow-y: auto;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+
+    &.is-large {
+      max-height: 640px;
+    }
+
+  }
+
+  .widget-item {
+    border-bottom: 2px solid $color-light;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-column-gap: $space-3x;
+    padding: $space-2x $space-1x;
+
+    &:hover {
+      background-color: $color-light;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    img {
+      @extend %is-responsive;
+    }
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+}

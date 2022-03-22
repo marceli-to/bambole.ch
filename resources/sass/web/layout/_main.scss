@@ -1,0 +1,26 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/main
+ * -----------------------------------------------------------------------------
+ */
+
+main.site {
+  > div {
+    @extend %inner-block;
+    padding: 0 $space-5x $space-5x $space-5x;
+    position: relative;
+  }
+}
+
+main.site-auth {
+  min-height: 100vh;
+
+  > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    min-height: inherit;
+    width: 100%;
+  }
+}

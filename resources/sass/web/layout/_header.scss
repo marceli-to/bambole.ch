@@ -1,0 +1,35 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/header
+ * -----------------------------------------------------------------------------
+ */
+
+header.site-header {
+
+  > div {
+    @extend %inner-block;
+    padding: $space-5x;
+    position: relative;
+  }
+
+  .logo {
+    margin-top: 95px;
+    max-width: 90%;
+
+    img {
+      @extend %is-responsive;
+    }
+  }
+
+  .claim {
+    color: $color-primary;
+    left: $space-5x;
+    position: absolute;
+    top: $space-5x;
+
+    svg {
+      @extend %is-responsive;
+      max-width: 80px;
+    }
+  }
+}
