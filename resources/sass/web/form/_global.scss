@@ -22,7 +22,7 @@ button {
 	@include font-light();
   @include font-size($fs-md);
   line-height: 1 !important;
-	padding: $space-2x $space-4x;
+	padding: $space-2x;
 	position: relative;
 	outline: none !important;
   text-align: center;
@@ -32,7 +32,7 @@ button {
 	-webkit-tap-highlight-color: $color-white;
 
   @include bp-sm() {
-    padding: $space-3x $space-4x;
+    padding: $space-3x;
   }
 }
 

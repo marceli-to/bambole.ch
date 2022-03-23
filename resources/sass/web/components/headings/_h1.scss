@@ -10,7 +10,8 @@ h1 {
   @include font-size($fs-xxl);
   margin-bottom: $space-3x;
   text-align: center;
-    
+  text-transform: uppercase;
+
   @include bp-sm() {
     margin-bottom: $space-4x;
   }
