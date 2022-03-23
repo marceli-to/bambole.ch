@@ -11,6 +11,14 @@ section.intro {
     margin-bottom: $space-10x;
   }
 
+  h1, 
+  h2, 
+  p {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   h1 {
     @include font-size($fs-xl);
   }

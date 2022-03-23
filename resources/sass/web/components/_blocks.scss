@@ -20,14 +20,13 @@
   }
 
   @include bp-md() {
-    background-color: burlywood;
+    //background-color: burlywood;
     max-width: $site-max-width;
-
   }
 
-  // @include bp-lg() {
-  //   background-color: brown;
-  // }
+  @include bp-lg() {
+   //background-color: brown;
+  }
 }
 
 

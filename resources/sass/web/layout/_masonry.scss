@@ -1,0 +1,12 @@
+
+.masonry {
+
+  .masonry-item {
+    width: 100%;
+
+    @include bp-md() {
+      margin-top: 0 !important;
+      width: calc(50% - 15px);
+    }
+  }
+}

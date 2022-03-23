@@ -12,6 +12,4 @@
       </select>
     </div>
   </div>
-  <x-text-area name="remarks" placeholder="Bemerkungen"></x-text-area>
-
 </form>

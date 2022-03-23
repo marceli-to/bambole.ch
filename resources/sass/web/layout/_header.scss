@@ -21,8 +21,8 @@ header.site-header {
       max-width: 90%;
     }
 
-    @include bp-sm() {
-      margin-top: 175px;
+    @include bp-md() {
+      margin-top: 40px;
     }
 
     img {

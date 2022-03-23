@@ -5,15 +5,29 @@
  */
 
 article {
-  min-height: 300px;
   padding: $space-3x;
 
   @include bp-sm() {
     padding: $space-4x;
   }
 
-  @include bp-lg() {
-    padding: $space-6x;
+  @include bp-md() {
+    margin-bottom: $space-4x;
+    padding: $space-6x $space-4x;
+  }
+
+  &.has-overlap {
+    margin-top: 20px;
+    > div {
+      margin-top: -40px;
+    }
+
+    @include bp-md() {
+      margin-top: 30px;
+      > div {
+        margin-top: -60px;
+      }
+    }
   }
 
   h1 {
@@ -25,11 +39,7 @@ article {
     text-align: center;
   }
 
-  + article {
-    margin-top: $space-4x;
-
-    @include bp-sm() {
-      margin-top: $space-6x;
-    }
+  h1 + h2 {
+    margin-top: -10px;
   }
 }

@@ -1,4 +1,4 @@
-<article class="theme-dark">
+<article class="theme-dark masonry-item">
   <h1>Mach mit</h1>
   <p>Das Bambole könnte nicht existieren <strong>ohne die zahlreichen ehrenamtlichen Helfer:innen</strong>, die uns bei der Vorbereitung, beim Abbau und natürlich auch währen des Festivals unterstützen.</p>
   <p><strong>Hier kommst DU ins Spiel:</strong> Werde Teil unseres Bambole-Teams! Nur so können wir garantieren, dass im August ein unvergessliches Festival stattfinden kann.</p>
