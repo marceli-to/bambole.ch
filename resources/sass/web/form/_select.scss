@@ -10,35 +10,35 @@
   position: relative;
   width: 100%;
 
-	&:after {
-    @include background-default();
-    background-image: url($url-icons + 'chevron-down.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 20px auto;
-    background-color: transparent;
-    content: '';
-    height: 100%;
-    right: 0;
-    padding: 0 5px;
-    position: absolute;
-    top: 0;
-    width: 32px;
-    z-index: 0;
-	}
+	// &:after {
+  //   @include background-default();
+  //   background-image: url($url-icons + 'chevron-down.svg');
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-size: 20px auto;
+  //   background-color: transparent;
+  //   content: '';
+  //   height: 100%;
+  //   right: 0;
+  //   padding: 0 5px;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 32px;
+  //   z-index: 0;
+	// }
 
 	select {
     background-color: $color-white;
     color: $color-black;
     display: block;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    @include bp-sm() {
 
-      padding: $space-4x $space-3x;
-    }
     &:hover {
       cursor: pointer;
+    }
+    @include bp-sm() {
+      padding: $space-4x $space-3x;
     }
   }
 }

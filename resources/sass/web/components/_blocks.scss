@@ -13,19 +13,13 @@
   padding-right: $space-3x;
 
   @include bp-sm() {
-    //background-color: rebeccapurple;
     padding-left: $space-10x;
     padding-right: $space-10x;
     max-width: 900px;
   }
 
   @include bp-md() {
-    //background-color: burlywood;
     max-width: $site-max-width;
-  }
-
-  @include bp-lg() {
-   //background-color: brown;
   }
 }
 
