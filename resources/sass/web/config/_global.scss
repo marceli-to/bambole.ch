@@ -27,9 +27,10 @@ $url-svg:    '../img/svg/';
 /* Breakpoints
  * -------------------- */
 
-$bp-sm:  900px;
-$bp-md: 1024px;
-$bp-lg: 1440px;
+$bp-sm:  800px;
+$bp-md: 1000px;
+$bp-lg: 1200px;
+$bp-xl: 1400px;
 
 $breakpoints: (
   sm: $bp-sm,
@@ -40,7 +41,7 @@ $breakpoints: (
 /* Site
  * -------------------- */
 
-$site-max-width: 1440px;
+$site-max-width: 1280px;
 
 /* Grids
  * -------------------- */

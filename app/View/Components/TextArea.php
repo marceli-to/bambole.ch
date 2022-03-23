@@ -52,7 +52,7 @@ class TextArea extends Component
    * 
    * @return void
    */
-  public function __construct($name, $label, $placeholder = NULL, $required = FALSE, $css = NULL)
+  public function __construct($name, $label = NULL, $placeholder = NULL, $required = FALSE, $css = NULL)
   {
     $this->name = $name;
     $this->label = $label;

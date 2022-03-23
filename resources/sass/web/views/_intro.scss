@@ -5,16 +5,26 @@
  */
 
 section.intro {
+  margin-bottom: $space-5x;
   
+  @include bp-sm() {
+    margin-bottom: $space-10x;
+  }
+
   h1 {
-    margin-bottom: $space-3x;
+    @include font-size($fs-xl);
   }
 
   h2 {
     margin-bottom: $space-2x;
+
+    @include bp-sm() {
+      margin-bottom: $space-3x;
+    }
+  
+    @include bp-lg() {
+      margin-bottom: $space-4x;
+    }
   }
 
-  p {
-    text-align: center;
-  }
 }

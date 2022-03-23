@@ -5,7 +5,7 @@
  */
 
 .select-wrapper {
-  background-color: transparent;
+  background-color: ä$color-white;
   display: block;
   position: relative;
   width: 100%;
@@ -28,10 +28,11 @@
 	}
 
 	select {
-    background-color: transparent !important;
+    background-color: $color-white;
     color: $color-black;
     display: block;
-    padding: 10px 50px 8px 6px;
+    padding: $space-2x $space-4x;
+    text-align: center;
     width: 100%;
 
     &:hover {

@@ -5,5 +5,31 @@
  */
 
 article {
- 
+  min-height: 300px;
+  padding: $space-3x;
+
+  @include bp-sm() {
+    padding: $space-4x;
+  }
+
+  @include bp-lg() {
+    padding: $space-6x;
+  }
+
+  h1 {
+    margin-bottom: $space-2x;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  + article {
+    margin-top: $space-4x;
+
+    @include bp-sm() {
+      margin-top: $space-6x;
+    }
+  }
 }

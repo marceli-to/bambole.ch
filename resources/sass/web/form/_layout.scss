@@ -1,0 +1,17 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: form/layout
+ * -----------------------------------------------------------------------------
+ */
+
+.form-group {
+  margin-bottom: $space-3x;
+
+  @include bp-sm(){ 
+    margin-bottom: $space-4x
+  }
+
+  @include bp-lg(){ 
+    margin-bottom: $space-5x
+  }
+}

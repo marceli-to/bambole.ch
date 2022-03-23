@@ -8,13 +8,22 @@ header.site-header {
 
   > div {
     @extend %inner-block;
-    padding: $space-5x;
+    padding-bottom: $space-5x;
+    padding-top: $space-5x;
     position: relative;
   }
 
   .logo {
     margin-top: 95px;
-    max-width: 90%;
+   
+    @include bp-sm() {
+      margin-top: 125px;
+      max-width: 90%;
+    }
+
+    @include bp-sm() {
+      margin-top: 175px;
+    }
 
     img {
       @extend %is-responsive;
@@ -27,9 +36,22 @@ header.site-header {
     position: absolute;
     top: $space-5x;
 
+    @include bp-sm() {
+      left: $space-10x;
+      top: $space-10x;
+    }
+
     svg {
       @extend %is-responsive;
       max-width: 80px;
+
+      @include bp-sm() {
+        max-width: 130px;
+      }
+
+      @include bp-lg() {
+        max-width: 180px;
+      }
     }
   }
 }

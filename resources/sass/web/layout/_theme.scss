@@ -1,0 +1,26 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/section
+ * -----------------------------------------------------------------------------
+ */
+
+.theme {
+
+}
+
+.theme-dark {
+  background-color: $color-dark;
+  color: $color-white;
+
+  h1 {
+    color: $color-primary;
+  }
+
+  h2 {
+    color: $color-white;
+  }
+}
+
+.theme-medium {
+  background-color: $color-primary;
+}

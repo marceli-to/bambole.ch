@@ -27,7 +27,13 @@ strong, b {
 }
 
 p {
-	margin-bottom: $space-3x;
+	margin-bottom: $space-4x;
+  text-align: center;
+
+  @include bp-lg() {
+    margin-bottom: $space-6x;
+  }
+
 	&:last-child {
 		margin-bottom: 0 !important;
 	}

@@ -7,8 +7,20 @@
 main.site {
   > div {
     @extend %inner-block;
-    padding: 0 $space-5x $space-5x $space-5x;
+    padding-bottom: $space-5x;
     position: relative;
+
+    a {
+      color: $color-dark;
+      display: inline-block;
+      @include font-bold();
+      padding-left: 1px;
+      padding-right: 1px;
+      
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
   }
 }
 

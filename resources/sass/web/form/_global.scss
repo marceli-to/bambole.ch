@@ -6,6 +6,7 @@
 
 input[type=text],
 input[type=email],
+input[type=tel],
 input[type=number],
 input[type=password],
 input[type=date],
@@ -13,18 +14,26 @@ input[type=time],
 textarea,
 select,
 button {
-	background-color: transparent;
+	background-color: $color-white;
 	border-radius: 0;
-	border: 1px solid $color-black;
+	border: none;
 	color: $color-black;
 	display: block;
-	@include font-regular();
-	padding: 0;
+	@include font-light();
+  @include font-size($fs-md);
+  line-height: 1 !important;
+	padding: $space-2x $space-4x;
 	position: relative;
 	outline: none !important;
+  text-align: center;
+  width: 100%;
 	z-index: 1;
 	-webkit-appearance: none;
 	-webkit-tap-highlight-color: $color-white;
+
+  @include bp-sm() {
+    padding: $space-3x $space-4x;
+  }
 }
 
 input:-webkit-autofill,
