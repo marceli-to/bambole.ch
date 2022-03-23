@@ -15,51 +15,76 @@ $step: 5px;
   margin-right: auto;
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .my-#{$i}x { margin: $i * $step 0; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .mx-#{$i}x { margin: 0 $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .mt-#{$i}x { margin-top: $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .mb-#{$i}x { margin-bottom: $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .ml-#{$i}x { margin-left: $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .mr-#{$i}x { margin-right: $i * $step; }
 }
 
+@for $i from 1 through 20 {
+  @media only screen and (min-width: $bp-md) {
+    .md\:mt-#{$i}x { margin-bottom: $i * $step; }
+  }
+}
+
+@for $i from 1 through 20 {
+  @media only screen and (min-width: $bp-md) {
+    .md\:mb-#{$i}x { margin-bottom: $i * $step; }
+  }
+}
+
+@for $i from 1 through 20 {
+  @media only screen and (min-width: $bp-md) {
+    .md\:ml-#{$i}x { margin-bottom: $i * $step; }
+  }
+}
+
+@for $i from 1 through 20 {
+  @media only screen and (min-width: $bp-md) {
+    .md\:mr-#{$i}x { margin-bottom: $i * $step; }
+  }
+}
+
+
 // Padding
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .py-#{$i}x { padding: $i * $step 0; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .px-#{$i}x { padding: 0 $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .pt-#{$i}x { padding-top: $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .pb-#{$i}x { padding-bottom: $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .pl-#{$i}x { padding-left: $i * $step; }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
   .pr-#{$i}x { padding-right: $i * $step; }
 }

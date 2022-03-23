@@ -9,18 +9,6 @@ main.site {
     @extend %inner-block;
     padding-bottom: $space-5x;
     position: relative;
-
-    a {
-      color: $color-dark;
-      display: inline-block;
-      @include font-bold();
-      padding-left: 1px;
-      padding-right: 1px;
-      transition: background-color .1s ease-in;
-      &:hover {
-        background-color: $color-primary;
-      }
-    }
   }
 }
 

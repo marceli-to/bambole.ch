@@ -35,5 +35,9 @@ section.intro {
       margin-bottom: $space-4x;
     }
   }
+  
+  a {
+    @extend %anchor;
+  }
 
 }

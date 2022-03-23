@@ -7,6 +7,10 @@
 article {
   padding: $space-3x;
 
+  &:first-of-type {
+    margin-top: 0 !important;
+  }
+
   @include bp-sm() {
     padding: $space-4x;
   }
@@ -23,7 +27,7 @@ article {
     }
 
     @include bp-md() {
-      margin-top: 0;
+      margin-top: 20px;
       > div {
         margin-top: -60px;
       }
