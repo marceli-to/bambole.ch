@@ -1,6 +1,6 @@
 <header class="site-header">
   <div>
-    @include('partials.claim')
-    @include('partials.logo')
+    @include('partials.misc.claim')
+    @include('partials.misc.logo')
   </div>
 </header>
