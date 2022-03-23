@@ -9,8 +9,8 @@
 .inner-block {
   margin-left: auto;
   margin-right: auto;
-  padding-left: $space-5x;
-  padding-right: $space-5x;
+  padding-left: $space-3x;
+  padding-right: $space-3x;
 
   @include bp-sm() {
     //background-color: rebeccapurple;
