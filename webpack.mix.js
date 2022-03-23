@@ -28,6 +28,9 @@ mix.webpackConfig({
 mix.sass('resources/sass/web/app.scss', 'public/assets/css/app.css').options({processCssUrls: false}).version();
 mix.js('resources/js/web/app.js', 'public/assets/js/app.js').version();
 
+// Web - Register
+mix.js('resources/js/web/register/app.js', 'public/assets/js/register.js').version();
+
 // App
 mix.js('resources/js/cms/app.js', 'public/assets/js/cms/app.js').version();
 mix.sass('resources/sass/cms/app.scss', 'public/assets/css/cms/app.css').options({processCssUrls: false}).version();

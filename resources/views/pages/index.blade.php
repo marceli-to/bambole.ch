@@ -3,11 +3,10 @@
 @include('partials.content.intro')
   <section class="content masonry">
     @include('partials.content.bands')
-    @include('partials.content.participate')
+    @include('partials.content.participate', ['duties' => $duties])
     @include('partials.content.donate')
     @include('partials.content.manifest')
     @include('partials.content.bambolini')
     @include('partials.content.contact')
-
   </section>
 @endsection

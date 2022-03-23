@@ -3,7 +3,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ImageController;
-
+use App\Http\Controllers\Api\BackerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +13,12 @@ use App\Http\Controllers\ImageController;
 */
 
 // Auth routes
-Auth::routes(['verify' => true, 'register' => false]);
+// Auth::routes(['verify' => true, 'register' => false]);
 Route::get('/logout', 'Auth\LoginController@logout');
 
 // Frontend
 Route::get('/', [PageController::class, 'index'])->name('page.index');
-
+Route::post('register', [BackerController::class, 'store']);
 
 // Url based images
 Route::get('/img/{template}/{filename}/{maxW?}/{maxH?}/{coords?}', [ImageController::class, 'getResponse']);

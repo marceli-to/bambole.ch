@@ -1,5 +1,9 @@
-<h2>Melde dich an!</h2>
-<form>
+
+<div id="app-register">
+  <h2>Melde dich an!</h2>
+  <register-form :duties="{{{$duties}}}"></register-form>
+</div>
+{{-- <form>
   @csrf
   <x-text-field type="text" name="name" placeholder="Name*" />
   <x-text-field type="email" name="email" placeholder="E-Mail*" />
@@ -12,4 +16,4 @@
       </select>
     </div>
   </div>
-</form>
+</form> --}}

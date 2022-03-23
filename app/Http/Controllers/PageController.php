@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\Http\Controllers\BaseController;
+use App\Models\Duty;
 use Illuminate\Http\Request;
 
 class PageController extends BaseController
@@ -20,7 +21,8 @@ class PageController extends BaseController
 
   public function index()
   {
-    return view($this->viewPath . 'index');
+    $duties = Duty::orderBy('description')->get();
+    return view($this->viewPath . 'index', ['duties' => $duties]);
   }
 
 }
