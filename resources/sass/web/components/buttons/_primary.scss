@@ -7,12 +7,12 @@
 %btn-primary,
 .btn-primary {
   @extend %btn;
-  background-color: $color-grey;
-  border-radius: 2px;
+  background-color: $color-primary;
+  border-radius: 0;
   border: none;
-  color: $color-white;
-  @include font-size($fs-btn);
-  @include font-bold();
+  color: $color-dark;
+  @include font-size($fs-sm);
+  @include font-black();
   letter-spacing: 0.06em;
   padding: 16px 24px;
   width: auto;
@@ -20,6 +20,7 @@
   transition: all .1s ease-out;
 
   &:hover {
-    background-color: $color-black;
+    background-color: $color-white;
+    color: $color-dark;
   }
 }

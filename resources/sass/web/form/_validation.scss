@@ -3,3 +3,30 @@
  * File: form/validation
  * -----------------------------------------------------------------------------
  */
+
+.form-errors {
+  margin-bottom: $space-3x;
+
+  @include bp-lg() {
+    margin-bottom: $space-5x;
+  }
+
+  h3 {
+    color: $color-primary;
+    @include font-bold();
+    text-align: center;
+  }
+}
+
+input.is-invalid,
+select.is-invalid {
+  background-color: $color-primary;
+  
+  &:focus {
+    background-color: $color-white;
+  }
+
+  &:valid {
+    background-color: $color-white;
+  }
+}

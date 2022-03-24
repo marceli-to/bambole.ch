@@ -25,6 +25,7 @@ class BackerStoreRequest extends FormRequest
       'name' => 'required',
       'phone' => 'required',
       'email' => 'required|email',
+      'duty_id' => 'required|exists:App\Models\Duty,id'
     ];
   }
 
@@ -40,6 +41,8 @@ class BackerStoreRequest extends FormRequest
       'phone.required' => 'Name wird benötigt!',
       'email.required' => 'E-Mail wird benötigt!',
       'email.email' => 'E-Mail ist ungültig!',
+      'duty_id.required' => 'Funktion wird benötigt!',
+      'duty_id.exists' => 'Funktion nicht vorhande!',
     ];
   }
 }

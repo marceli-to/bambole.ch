@@ -1,6 +1,5 @@
 
 <div id="app-register">
-  <h2>Melde dich an!</h2>
   <register-form :duties="{{{$duties}}}"></register-form>
 </div>
 {{-- <form>

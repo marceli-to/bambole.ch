@@ -41,7 +41,7 @@ $step: 5px;
 
 @for $i from 1 through 20 {
   @media only screen and (min-width: $bp-md) {
-    .md\:mt-#{$i}x { margin-bottom: $i * $step; }
+    .md\:mt-#{$i}x { margin-top: $i * $step; }
   }
 }
 
@@ -53,13 +53,13 @@ $step: 5px;
 
 @for $i from 1 through 20 {
   @media only screen and (min-width: $bp-md) {
-    .md\:ml-#{$i}x { margin-bottom: $i * $step; }
+    .md\:ml-#{$i}x { margin-left: $i * $step; }
   }
 }
 
 @for $i from 1 through 20 {
   @media only screen and (min-width: $bp-md) {
-    .md\:mr-#{$i}x { margin-bottom: $i * $step; }
+    .md\:mr-#{$i}x { margin-right: $i * $step; }
   }
 }
 
