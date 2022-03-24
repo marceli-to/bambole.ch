@@ -24,11 +24,4 @@ class PageController extends BaseController
     $duties = Duty::orderBy('description')->get();
     return view($this->viewPath . 'index', ['duties' => $duties]);
   }
-
-  public function test()
-  {
-    dd('test');
-  }
-
-
 }
