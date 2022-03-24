@@ -25,4 +25,10 @@ class PageController extends BaseController
     return view($this->viewPath . 'index', ['duties' => $duties]);
   }
 
+  public function test()
+  {
+    dd('test');
+  }
+
+
 }
