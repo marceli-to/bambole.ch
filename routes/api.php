@@ -5,7 +5,6 @@ use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\UploadController;
 use App\Http\Controllers\Api\ImageController;
 use App\Http\Controllers\Api\FileController;
-use App\Http\Controllers\Api\BackerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +16,6 @@ use App\Http\Controllers\Api\BackerController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::post('/register', [BackerController::class, 'store']);
-
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
   return $request->user();
