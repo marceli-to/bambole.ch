@@ -2078,7 +2078,7 @@ __webpack_require__.r(__webpack_exports__);
       this.hasErrors = false;
       this.errorMessage = '';
       this.isLoading = true;
-      this.axios.post("/register", this.form).then(function (response) {
+      this.axios.post("/api/register", this.form).then(function (response) {
         _this.isLoading = false;
         _this.isDone = true;
 

@@ -18,7 +18,6 @@ Route::get('/logout', 'Auth\LoginController@logout');
 
 // Frontend
 Route::get('/', [PageController::class, 'index'])->name('page.index');
-Route::post('/register', [BackerController::class, 'store']);
 
 // Url based images
 Route::get('/img/{template}/{filename}/{maxW?}/{maxH?}/{coords?}', [ImageController::class, 'getResponse']);

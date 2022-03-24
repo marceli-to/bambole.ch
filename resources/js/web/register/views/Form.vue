@@ -80,7 +80,7 @@ export default {
       this.hasErrors = false;
       this.errorMessage = '';
       this.isLoading = true;
-      this.axios.post(`/register`, this.form).then(response => {
+      this.axios.post(`/api/register`, this.form).then(response => {
         this.isLoading = false;
         this.isDone = true;
         this.reset();
