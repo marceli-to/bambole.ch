@@ -20,7 +20,7 @@ button {
 	color: $color-black;
 	display: block;
 	@include font-light();
-  @include font-size($fs-md);
+  @include font-size($fs-sm);
   line-height: 1 !important;
 	padding: $space-2x;
 	position: relative;

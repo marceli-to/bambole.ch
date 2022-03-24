@@ -1,15 +1,4 @@
 /*!
- * Packery PACKAGED v2.1.2
- * Gapless, draggable grid layouts
- *
- * Licensed GPLv3 for open source use
- * or Packery Commercial License for commercial use
- *
- * http://packery.metafizzy.co
- * Copyright 2013-2018 Metafizzy
- */
-
-/*!
  * Sizzle CSS Selector Engine v2.3.5
  * https://sizzlejs.com/
  *

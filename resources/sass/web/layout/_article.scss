@@ -7,31 +7,12 @@
 article {
   padding: $space-3x;
 
-  &:first-of-type {
-    margin-top: 0 !important;
-  }
-
   @include bp-sm() {
     padding: $space-4x;
   }
 
   @include bp-md() {
-    margin-bottom: $space-4x;
     padding: $space-6x $space-4x;
-  }
-
-  &.overlap {
-    margin-top: 10px;
-    > div {
-      margin-top: -40px;
-    }
-
-    @include bp-md() {
-      margin-top: 20px;
-      > div {
-        margin-top: -60px;
-      }
-    }
   }
 
   h1 {
@@ -40,7 +21,6 @@ article {
 
   h1 + h2 {
     margin-top: -10px;
-
     @include bp-md() {
       margin-top: -15px;
     }

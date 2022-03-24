@@ -1,8 +1,8 @@
 // Load dependencies
 require('./bootstrap');
-require('./vendor/packery.js');
+require('./vendor/colcade.js');
 
 // Modules
-require('./modules/packery.js');
+require('./modules/colcade.js');
 require('./modules/utils.js');
 
