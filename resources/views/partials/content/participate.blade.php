@@ -1,7 +1,7 @@
 <article class="theme-dark masonry-item" id="machmit">
   <h1>Mach mit</h1>
   <h2>Ein Openair ohne Dich?<br>Ein No-Go</h2>
-  <p>Das Bambole könnte nicht existieren <strong>ohne die zahlreichen ehrenamtlichen Helfer:innen</strong>, die uns bei der Vorbereitung, beim Abbau und natürlich auch währen des Festivals unterstützen.</p>
+  <p>Das Bambole könnte nicht existieren <strong>ohne die zahlreichen ehrenamtlichen Helfer:innen</strong>, die uns bei der Vorbereitung, beim Auf- und Abbau und natürlich auch während des Festivals unterstützen.</p>
   <p><strong>Hier kommst DU ins Spiel:</strong> Werde Teil unseres Bambole-Teams! Nur so können wir garantieren, dass im August ein unvergessliches Festival stattfinden kann.</p>
   <p>Es gibt die unterschiedlichsten Aufgaben, die Du stunden- oder tageweise übernehmen kannst. Du musst hierfür kein Profi sein – Fehler machen und Erfahrungen sammeln ist bei uns ausdrücklich erlaubt.</p>
   <p>Klick Dich doch einmal durch die Liste unten und markiere, was Dich am meisten interessiert. Wir werden uns dann im Laufe der nächsten Tage bei Dir melden, um Dir unverbindlich noch mehr Details durchzugeben.</p>
