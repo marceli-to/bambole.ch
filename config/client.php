@@ -19,10 +19,9 @@ return [
   */
 
   'email' => [
-    'from' => env('BAMBOLE_MAIL_FROM', 'marcel@jamon.digital'),
+    'from' => env('BAMBOLE_MAIL_FROM', 'm@marceli.to'),
     'recipient' => env('BAMBOLE_MAIL_RECIPIENT', 'm@marceli.to'),
-    'bcc' => env('BAMBOLE_MAIL_BCC', 'info@forum-architektur.ch'),
-    'recipient_test' => env('BAMBOLE_MAIL_RECIPIENT_TEST', 'm@marceli.to')
+    'bcc' => env('BAMBOLE_MAIL_BCC', 'm@marceli.to'),
   ],
 
   /*
@@ -32,7 +31,7 @@ return [
   |
   */
 
-  'domain' => env('BAMBOLE_DOMAIN', 'https://forum-architektur.ch'),
+  'domain' => env('BAMBOLE_DOMAIN', 'https://bambole.ch'),
 
   /*
   |--------------------------------------------------------------------------

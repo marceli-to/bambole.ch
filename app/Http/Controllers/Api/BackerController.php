@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\DataCollection;
 use App\Models\Backer;
 use App\Http\Requests\BackerStoreRequest;
+use App\Events\BackerRegistration;
 // use App\Exports\BackersExport;
 // use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
@@ -41,6 +42,7 @@ class BackerController extends Controller
   public function store(BackerStoreRequest $request)
   {
     $backer = Backer::create($request->all());
+    event(new BackerRegistration($backer));
     return response()->json(['backerId' => $backer->id]);
   }
 

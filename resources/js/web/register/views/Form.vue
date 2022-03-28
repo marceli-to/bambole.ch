@@ -27,7 +27,10 @@
       <a 
       href="javascript:;" 
       @click.prevent="register()"
-      :class="[this.isLoading ? 'is-loading' : '', 'btn-primary']">Absenden</a>
+      :class="[this.isLoading ? 'is-loading' : '', 'btn-primary']">
+      <span>Absenden</span>
+      <span></span>
+    </a>
     </div>
   </form>
   <div v-if="isDone">
