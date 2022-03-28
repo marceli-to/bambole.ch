@@ -6,11 +6,11 @@
  */
 
 .icon-heart {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 
   svg {
     @extend %is-responsive;
+    display: inline-block !important;
   }
 
   &.is-sm {

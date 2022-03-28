@@ -2,9 +2,9 @@
   <div>
     <h1>Kontakt</h1>
     <p>Verein Bambole<br>Wolfensbergstrasse 59<br>8400 Winterthur</p>
-    <div class="align-center mb-1x md:mb-2x">Anfragen per E-Mail</div>
+    <div class="align-center mb-3x md:mb-5x">Anfragen per E-Mail</div>
     <p>
-      <a href="mailto:info@bambole.ch" title="Mail für allgemeine Fragen" class="btn-primary is-light mb-1x md:mb-2x">Allgemeine Fragen</a><br>
+      <a href="mailto:info@bambole.ch" title="Mail für allgemeine Fragen" class="btn-primary is-light mb-2x md:mb-4x">Allgemeine Fragen</a><br>
       <a href="mailto:pr@bambole.ch" title="Mail für Medienanfragen" class="btn-primary is-light ">Medienanfragen</a>
     </p>
     <div class="icon-heart is-lg">
