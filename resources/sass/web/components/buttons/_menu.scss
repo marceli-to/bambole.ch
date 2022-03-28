@@ -1,0 +1,54 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/buttons/menu
+ * -----------------------------------------------------------------------------
+ */
+
+.btn-menu {
+  color: $color-primary;
+  height: 30px;
+  right: $space-5x;
+  position: fixed;
+  top: $space-5x;
+  width: 30px;
+  z-index: 701;
+
+  @include bp-sm() {
+    right: $space-10x;
+    top: $space-10x;
+  }
+
+  svg {
+    display: block;
+    height: auto;
+    width: 100%;
+    &.cross {
+      display: none;
+    }
+
+    &.burger {
+      display: block;
+    }
+  }
+
+  &.is-active {
+    svg {
+
+      &.cross {
+        display: block;
+      }
+
+      &.burger {
+        display: none;
+      }
+    }
+  }
+
+  &:hover {
+    svg {
+      &.burger {
+        color: $color-primary;
+      }
+    }
+  }
+}

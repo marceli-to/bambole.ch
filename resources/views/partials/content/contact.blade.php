@@ -1,4 +1,4 @@
-<article class="theme-medium overlap masonry-item">
+<article class="theme-medium overlap masonry-item" id="contact">
   <div>
     <h1>Kontakt</h1>
     <p>Verein Bambole<br>Wolfensbergstrasse 59<br>8400 Winterthur</p>

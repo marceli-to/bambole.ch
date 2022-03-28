@@ -15,7 +15,9 @@ header.site-header {
 
   .logo {
     margin-top: 95px;
-   
+    position: relative;
+    z-index: 1;
+    
     @include bp-sm() {
       margin-top: 125px;
       max-width: 90%;
