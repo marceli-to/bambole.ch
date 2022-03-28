@@ -28,6 +28,14 @@
   color: $color-white !important;
 }
 
+.text-londrina-black {
+  @include font-londrina-black();
+}
+
+.text-xl {
+  @include font-size($fs-xl);
+}
+
 /**
  * Typography - Generic elements
  * -----------------------------------------------------------------------------

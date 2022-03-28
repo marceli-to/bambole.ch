@@ -1,0 +1,51 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/icons/heart
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+.icon-heart {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    @extend %is-responsive;
+  }
+
+  &.is-sm {
+    padding-bottom: $space-2x;
+
+    @include bp-lg() {
+      padding-bottom: $space-4x;
+    }
+
+    svg {
+      max-width: 60px;
+
+      @include bp-sm() {
+        max-width: 80px;
+      }
+    }    
+  }
+  
+  &.is-lg {
+    padding: $space-6x 0;
+
+    @include bp-lg() {
+      padding: $space-10x 0;
+    }
+
+    svg {
+      max-width: 100px;
+
+      @include bp-sm() {
+        max-width: 150px;
+      }
+
+      @include bp-lg() {
+        max-width: 200px;
+      }
+    }
+  }
+}

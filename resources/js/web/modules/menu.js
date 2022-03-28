@@ -21,6 +21,14 @@ var Menu = (function() {
   // Init
   var _initialize = function() {
     _bind();
+
+    // check for hash
+    let hash = window.location.hash;
+    if (hash) {
+      hash = hash.substring(1,hash.length);
+      _jumpTo(hash);
+    }
+
   };
 
   // Bind events
@@ -34,8 +42,11 @@ var Menu = (function() {
     });
 
     $(window).on('hashchange', function(e) {
-      let hash = window.location.hash.substr(1);
-      _jumpTo(hash);
+      let hash = window.location.hash;
+      if (hash) {
+        hash = hash.substring(1,hash.length);
+        _jumpTo(hash);
+      }
   } );
   };
 
@@ -52,7 +63,7 @@ var Menu = (function() {
   var _jumpTo = function(hash) {
     var el = document.getElementById(hash);
     _hide();
-    el.scrollIntoView({block: "end", behavior: "smooth"});
+    el.scrollIntoView({block: "start", behavior: "auto"});
   };
 
 

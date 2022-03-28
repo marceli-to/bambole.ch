@@ -28,7 +28,7 @@
     color: $color-dark;
   }
 
-  a {
+  a:not(.btn-primary) {
     @extend %anchor-medium;
   }
 }
@@ -41,7 +41,7 @@
     color: $color-dark;
   }
 
-  a {
+  a:not(.btn-primary) {
     @extend %anchor;
   }
 

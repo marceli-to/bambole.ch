@@ -36,6 +36,7 @@
 @import 'components/buttons/submit';
 @import 'components/cards';
 @import 'components/icons/global';
+@import 'components/icons/heart';
 @import 'components/headings/global';
 @import 'components/headings/h1';
 @import 'components/headings/h2';
@@ -68,6 +69,5 @@
 
 // Views
 @import 'views/auth';
-@import 'views/intro'
-
-
+@import 'views/intro';
+@import 'views/imprint';

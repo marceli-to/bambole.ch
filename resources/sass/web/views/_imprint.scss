@@ -1,0 +1,39 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/imprint
+ * -----------------------------------------------------------------------------
+ */
+
+section.imprint {
+
+  max-width: 1200px;
+  margin-top: $space-10x;
+
+  article {
+    padding: $space-2x;
+
+    @include bp-sm() {
+      padding-bottom: $space-4x;
+      padding-top: $space-4x;
+    }
+
+    @include bp-md() {
+      padding-bottom: $space-4x;
+      padding-top: $space-4x;
+    }
+
+    p {
+      @include font-size($fs-xs);
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+}

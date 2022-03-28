@@ -11,16 +11,40 @@
   border-radius: 0;
   border: none;
   color: $color-dark;
+  display: inline-block;
   @include font-size($fs-sm);
   @include font-black();
   letter-spacing: 0.06em;
-  padding: 16px 24px;
+  padding: 8px;
   width: auto;
   text-transform: uppercase;
   transition: all .1s ease-out;
 
+  @include bp-md() {
+    padding: 10px;
+  }
+
   &:hover {
     background-color: $color-white;
     color: $color-dark;
+  }
+
+  &.is-light {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-dark;
+    }
+  }
+
+  &.is-dark {
+    background-color: $color-dark;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-dark;
+    }
   }
 }

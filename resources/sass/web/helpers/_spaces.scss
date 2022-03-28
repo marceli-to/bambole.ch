@@ -88,3 +88,10 @@ $step: 5px;
 @for $i from 1 through 20 {
   .pr-#{$i}x { padding-right: $i * $step; }
 }
+
+
+@for $i from 1 through 20 {
+  @media only screen and (min-width: $bp-md) {
+    .md\:pb-#{$i}x { padding-bottom: $i * $step; }
+  }
+}
