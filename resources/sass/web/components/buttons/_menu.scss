@@ -18,6 +18,10 @@
     top: $space-10x;
   }
 
+  @include bp-md() {
+    right: calc(((100% - #{$site-max-width}) / 2) + 50px)
+  }
+  
   svg {
     display: block;
     height: auto;
