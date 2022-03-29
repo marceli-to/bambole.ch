@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>@if(trim($__env->yieldContent('seo_title')))@yield('seo_title') &bull; {{config('seo.title')}}@else{{config('seo.title')}}@endif</title>
+<title>{{config('seo.title')}}</title>
+<meta name="description" content="{{config('seo.description')}}">
+<meta property="og:title" content="{{config('seo.title')}}">
+<meta property="og:description" content="{{config('seo.description')}}">
+<meta property="og:url" content="https://www.bambole.ch">
+<meta property="og:site_name" content="{{config('seo.title')}}">
 @include('partials.misc.favicon')
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 <meta name="format-detection" content="telephone=no">
