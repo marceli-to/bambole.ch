@@ -1,0 +1,54 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/menu/site
+ * -----------------------------------------------------------------------------
+ */
+
+nav.interaction {
+  display: none;
+  right: 0;
+  position: fixed;
+  top: 152px;
+
+  @include bp-sm() {
+    display: block;
+  }
+
+  @include bp-lg() {
+    top: 176px;
+  }
+
+  li {
+    display: block;
+    &:not(:last-of-type) {
+      margin-bottom: 4px;
+      @include bp-lg() {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  a {
+    align-items: center;
+    background-color: $color-dark;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    padding: 6px;
+    width: 32px;
+
+
+    @include bp-lg() {
+      height: 42px;
+      padding: 8px;
+      width: 42px;
+    }
+  
+
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+}
