@@ -14,10 +14,12 @@ use App\Http\Controllers\Api\BackerController;
 
 // Auth routes
 // Auth::routes(['verify' => true, 'register' => false]);
-Route::get('/logout', 'Auth\LoginController@logout');
+// Route::get('/logout', 'Auth\LoginController@logout');
 
 // Frontend
 Route::get('/', [PageController::class, 'index'])->name('page.index');
+Route::get('/administration', [PageController::class, 'index'])->name('page.index');
+Route::get('/login', [PageController::class, 'index'])->name('page.index');
 Route::post('/register', [BackerController::class, 'store']);
 
 // Url based images
