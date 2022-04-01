@@ -18,8 +18,6 @@ use App\Http\Controllers\Api\BackerController;
 
 // Frontend
 Route::get('/', [PageController::class, 'index'])->name('page.index');
-// Route::get('/administration', [PageController::class, 'index'])->name('page.index');
-// Route::get('/login', [PageController::class, 'index'])->name('page.index');
 Route::post('/register', [BackerController::class, 'store']);
 
 // Url based images
