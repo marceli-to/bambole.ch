@@ -13,8 +13,10 @@ use App\Http\Controllers\Api\BackerController;
 */
 
 // Auth routes
-// Auth::routes(['verify' => true, 'register' => false]);
+// Auth::routes(['verify' => false, 'register' => false, 'login' => false]);
 // Route::get('/logout', 'Auth\LoginController@logout');
+
+
 
 // Frontend
 Route::get('/', [PageController::class, 'index'])->name('page.index');

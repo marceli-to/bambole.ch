@@ -9,7 +9,8 @@ nav.interaction {
   right: 0;
   position: fixed;
   top: 152px;
-
+  z-index: 500;
+  
   @include bp-sm() {
     display: block;
   }
