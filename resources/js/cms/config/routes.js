@@ -1,8 +1,5 @@
-// Errors
 import ErrorForbidden from '@/views/errors/Forbidden.vue';
 import ErrorNotFound from '@/views/errors/NotFound.vue';
-
-// Dashboard
 import Dashboard from '@/views/pages/Index.vue';
 
 const routes = [
@@ -17,7 +14,7 @@ const routes = [
   // Dashboard
   {
     name: 'dashboard',
-    path: '/administration/dashboard',
+    path: '/administration/',
     component: Dashboard,
   },
 

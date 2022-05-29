@@ -19,7 +19,6 @@
 <main role="main" class="site">
   <div>
     <section class="mx-auto">
-      @include('partials.logo')
       @yield('content')
     </section>
   </div>

@@ -7,10 +7,6 @@
 
 .brand {
   color: $color-primary;
-
-  svg {
-    display: block;
-    height: 50px;
-    width: auto;
-  }
+  @include font-londrina-regular();
+  @include font-size($fs-xl);
 }

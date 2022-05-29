@@ -6,4 +6,5 @@ require('./vendor/colcade.js');
 require('./modules/menu.js');
 require('./modules/colcade.js');
 require('./modules/utils.js');
+require('./modules/collapsible.js');
 

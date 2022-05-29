@@ -7,7 +7,9 @@
     @include('partials.content.donate')
     @include('partials.content.manifest')
     @include('partials.content.contact')
+    @include('partials.content.faq')
     @include('partials.content.bambolini')
+
     <div class="masonry-col"></div>
     <div class="masonry-col"></div>
   </section>

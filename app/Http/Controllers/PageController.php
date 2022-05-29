@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\BaseController;
 use App\Models\Duty;
+use App\Models\Faq;
 use Illuminate\Http\Request;
 
 class PageController extends BaseController
@@ -21,7 +22,11 @@ class PageController extends BaseController
 
   public function index()
   {
-    $duties = Duty::orderBy('description')->get();
-    return view($this->viewPath . 'index', ['duties' => $duties]);
+    $data = [
+      'duties' => Duty::orderBy('description')->get(),
+      'faqs' => Faq::published()->get(),
+    ];
+
+    return view($this->viewPath . 'index', $data);
   }
 }

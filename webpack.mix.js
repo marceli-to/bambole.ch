@@ -7,7 +7,6 @@ mix.webpackConfig({
             //'vue$': 'vue/dist/vue.esm.js',
             '@': __dirname + '/resources/js/cms/',
             '@register': __dirname + '/resources/js/web/register/',
-            '@newsletter': __dirname + '/resources/js/web/newsletter/',
         },
     },
 });

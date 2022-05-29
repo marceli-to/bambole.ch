@@ -13,10 +13,8 @@ use App\Http\Controllers\Api\BackerController;
 */
 
 // Auth routes
-// Auth::routes(['verify' => false, 'register' => false, 'login' => false]);
-// Route::get('/logout', 'Auth\LoginController@logout');
-
-
+Auth::routes(['verify' => true, 'register' => false]);
+Route::get('/logout', 'Auth\LoginController@logout');
 
 // Frontend
 Route::get('/', [PageController::class, 'index'])->name('page.index');
@@ -32,14 +30,13 @@ Route::get('/img/{template}/{filename}/{maxW?}/{maxH?}/{coords?}', [ImageControl
 |
 */
 
-// Route::middleware('auth:sanctum', 'verified')->group(function() {
+Route::middleware('auth:sanctum', 'verified')->group(function() {
   
-//   // Catch all routes
-//   Route::get('administration/{any?}', function () {
-//     return view('layout.authenticated');
-//   })->where('any', '.*')->middleware('role:admin')->name('authenticated');
+  // Catch all routes
+  Route::get('/administration/{any?}', function () {
+    return view('layout.authenticated');
+  })->where('any', '.*')->middleware('role:admin')->name('authenticated');
 
-
-// });
+});
 
 

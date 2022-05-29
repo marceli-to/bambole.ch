@@ -62,13 +62,24 @@
       </div>
       <div class="upload-overlay-cropper__wrapper" v-if="!isLoading">
         <div :class="'is-' + overlayItem.orientation">
+          <div class="cropper-formats">
+            <div>
+              <a href="javascript:;" @click.prevent="changeRatio(2.8,4)" class="btn-cropper-format is-3-4">Hoch 3x4</a>
+            </div>
+            <div>
+              <a href="javascript:;" @click.prevent="changeRatio(4,2.8)" class="btn-cropper-format is-4-3">Quer 4x3</a>
+            </div>
+            <div>
+              <a href="javascript:;" @click.prevent="changeRatio(3,2)" class="btn-cropper-format is-4-3">Quer 3x2</a>
+            </div>
+          </div>
           <div class="cropper-info">{{ cropW }} x {{ cropH }}px</div>
           <cropper
             :src="cropImage"
             :defaultPosition="defaultPosition"
             :defaultSize="defaultSize"
             :stencilProps="{
-              aspectRatio: this.ratioW/this.ratioH,
+              aspectRatio: this.ratio.w/this.ratio.h,
               linesClassnames: {
                 default: 'line',
               },
@@ -78,17 +89,22 @@
             }"
             @change="change"
           ></cropper>
-          <div class="form-buttons">
+          <div class="form-buttons flex justify-between">
             <a
               href="javascript:;"
-              class="btn-primary"
-              @click.prevent="saveCoords(overlayItem)"
-            >Speichern</a>
-            <a href="javascript:;"
-                class="btn-secondary"
-                @click.prevent="hideCropper()">
-              Abbrechen
+              class="btn-secondary has-icon"
+              @click.prevent="hideCropper()">
+              <x-icon size="18"></x-icon>
+              <span>Schliessen</span>
             </a>
+            <a
+              href="javascript:;"
+              class="btn-primary has-icon"
+              @click.prevent="saveCoords(overlayItem)">
+              <download-icon size="18"></download-icon>
+              <span>Speichern</span>
+            </a>
+
           </div>
         </div>
       </div>
@@ -122,17 +138,21 @@
             <label>Beschreibung</label>
             <textarea v-model="overlayItem.description"></textarea>
           </div>
-          <div class="form-buttons flex">
+          <div class="form-buttons flex justify-between">
             <a
               href="javascript:;"
-              class="btn-primary"
-              @click.prevent="update()"
-            >Speichern</a>
+              class="btn-secondary has-icon"
+              @click.prevent="hideEdit()">
+              <x-icon size="18"></x-icon>
+              <span>Schliessen</span>
+            </a>
             <a
               href="javascript:;"
-              class="btn-secondary ml-3x"
-              @click.prevent="hideEdit()"
-            >Schliessen</a>
+              class="btn-primary has-icon"
+              @click.prevent="update()">
+              <download-icon size="18"></download-icon>
+              <span>Speichern</span>
+            </a>
           </div>
         </div>
       </div>
@@ -144,17 +164,18 @@
 
 import draggable from 'vuedraggable';
 import { Cropper } from "vue-advanced-cropper";
-import { XIcon } from 'vue-feather-icons';
+import { XIcon,DownloadIcon } from 'vue-feather-icons';
 import ImageActions from "@/modules/images/components/Actions.vue";
 import ImageEdit from "@/modules/images/mixins/edit";
 import ImageCrop from "@/modules/images/mixins/crop";
-import ImageUtils from "@/modules/images//mixins/utils";
+import ImageUtils from "@/modules/images/mixins/utils";
 
 export default {
   
   components: {
     ImageActions,
     XIcon,
+    DownloadIcon,
     Cropper,
     draggable
   },
@@ -181,6 +202,11 @@ export default {
     ratioH: {
       type: Number,
       default: 2
+    },
+
+    allowRatioSwitch: {
+      type: Boolean,
+      default: true,
     }
   },
 
@@ -218,6 +244,19 @@ export default {
   },
 
   methods: {
+
+    changeRatio(w,h) {
+      this.ratio.w = w;
+      this.ratio.h = h;
+      this.resetCropper();
+    },
+
+    resetCropper() {
+      let image = this.overlayItem;
+      this.hideCropper();
+      this.showCropper(image, true)
+    },
+
 
     update() {
       this.axios.put(`${this.routes.update}/${this.overlayItem.id}`, this.overlayItem).then((response) => {

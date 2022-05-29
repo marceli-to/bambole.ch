@@ -1,0 +1,59 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/collapsible
+ * -----------------------------------------------------------------------------
+ */
+
+.collapsible {
+  border-bottom: 2px dashed $color-primary;
+
+  &:first-of-type {
+    border-top: 2px dashed $color-primary;
+  }
+
+  &.is-expanded {
+
+    .btn-collapsible {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+
+  .btn-collapsible {
+    @extend %py-3x;
+    @extend %sm\:py-5x;
+    align-items: center;
+    color: $color-black;
+    display: flex;
+    @include font-bold();
+    @include font-size($fs-sm);
+    line-height: 1 !important;
+
+    span {
+      @extend %pl-3x;
+      display: block;
+      padding-top: 2px;
+    }
+
+    > svg {
+
+      display: block;
+      height: auto;
+      width: 24px;
+      @include bp-sm() {
+        width: 28px;
+      }
+    }
+  }
+
+  .collapsible__body {
+    @extend %pb-3x;
+    @extend %sm\:pb-5x;
+    p {
+      text-align: left;
+    }
+  }
+
+}
