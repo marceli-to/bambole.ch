@@ -42,7 +42,7 @@ import store from '@/config/store';
 import baseRoutes from '@/config/routes';
 import imageRoutes from '@/modules/images/config/routes';
 import faqRoutes from '@/views/pages/faq/config/routes';
-
+import bandRoutes from '@/views/pages/band/config/routes';
 
 const router = new VueRouter(
   { 
@@ -50,6 +50,7 @@ const router = new VueRouter(
     routes: [
       ...baseRoutes,
       ...imageRoutes,
+      ...bandRoutes,
       ...faqRoutes,
     ]
   }

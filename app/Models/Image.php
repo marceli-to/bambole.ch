@@ -28,7 +28,6 @@ class Image extends Base
     'coords_y',
     'order',
     'publish',
-    'locked',
     'imageable_id',
     'imageable_type'
   ];
@@ -45,15 +44,6 @@ class Image extends Base
 	public function scopePublish($query)
 	{
 		return $query->where('publish', 1);
-	}
-
-	/**
-   * Scope for locked images
-   */
-
-	public function scopeLocked($query)
-	{
-		return $query->where('locked', 1);
 	}
 
 	/**

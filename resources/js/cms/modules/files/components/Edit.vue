@@ -50,14 +50,12 @@
               href="javascript:;"
               class="btn-secondary has-icon"
               @click.prevent="hideEdit()">
-              <x-icon size="18"></x-icon>
               <span>Schliessen</span>
             </a>
             <a
               href="javascript:;"
               class="btn-primary has-icon"
               @click.prevent="update()">
-              <download-icon size="18"></download-icon>
               <span>Speichern</span>
             </a>
           </div>

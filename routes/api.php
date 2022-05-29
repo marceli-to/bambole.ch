@@ -2,10 +2,11 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\UploadController;
+use App\Http\Controllers\Api\ImageController;
+use App\Http\Controllers\Api\BandController;
+use App\Http\Controllers\Api\StageController;
 use App\Http\Controllers\Api\FaqController;
-// use App\Http\Controllers\Api\UploadController;
-// use App\Http\Controllers\Api\ImageController;
-// use App\Http\Controllers\Api\FileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,15 +37,17 @@ Route::middleware('auth:sanctum')->group(function() {
   Route::get('image/state/{image}', [ImageController::class, 'toggle']);
   Route::delete('image/{image}', [ImageController::class, 'destroy']);
 
-  // Files
-  Route::get('files', [FileController::class, 'get']);
-  Route::post('files/order', [FileController::class, 'order']);
-  Route::get('file/{file}', [FileController::class, 'find']);
-  Route::post('file/upload', [FileController::class, 'upload']);
-  Route::post('file', [FileController::class, 'store']);
-  Route::put('file/{file}', [FileController::class, 'update']);
-  Route::get('file/state/{file}', [FileController::class, 'toggle']);
-  Route::delete('file/{file}', [FileController::class, 'destroy']);
+  // Stages
+  Route::get('stages', [StageController::class, 'get']);
+
+  // Band
+  Route::get('bands/{constraint?}', [BandController::class, 'get']);
+  Route::get('band/{band}', [BandController::class, 'find']);
+  Route::post('band', [BandController::class, 'store']);
+  Route::put('band/{band}', [BandController::class, 'update']);
+  Route::get('band/state/{band}', [BandController::class, 'toggle']);
+  Route::post('bands/order', [BandController::class, 'order']);
+  Route::delete('band/{band}', [BandController::class, 'destroy']);
 
   // Faq
   Route::get('faqs', [FaqController::class, 'get']);

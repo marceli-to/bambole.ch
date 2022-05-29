@@ -5,6 +5,12 @@
     </page-header>
     <div class="content content--wide cards">
       <div class="card">
+        <router-link :to="{name: 'bands'}">
+          <h2>Bands</h2>
+          <p>Verwaltung der Bands</p>
+        </router-link>
+      </div>
+      <div class="card">
         <router-link :to="{name: 'faqs'}">
           <h2>FAQ</h2>
           <p>Verwaltung der FAQs</p>

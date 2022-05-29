@@ -25,6 +25,11 @@
     </header>
     <ul>
       <li>
+        <router-link :to="{name: 'bands'}">
+          <span>Bands</span>
+        </router-link>
+      </li>
+      <li>
         <router-link :to="{name: 'faqs'}">
           <span>FAQ</span>
         </router-link>

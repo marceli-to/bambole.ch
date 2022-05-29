@@ -7,8 +7,13 @@
 .btn-secondary {
   @extend %btn-primary;
   background-color: darken($color-grey, 10);
-  color: $color-primary;
-	&:hover {
+  color: $color-white !important;
+
+  span {
+    color: $color-white !important;
+  }
+
+  &:hover {
 		background-color: $color-grey;
 	}
 }

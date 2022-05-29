@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers\Api;
 use App\Models\Image;
-use App\Models\HeroImage;
 use App\Services\Media;
 use App\Http\Resources\DataCollection;
 use Illuminate\Support\Facades\Storage;

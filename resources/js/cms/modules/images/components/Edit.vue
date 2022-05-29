@@ -64,13 +64,10 @@
         <div :class="'is-' + overlayItem.orientation">
           <div class="cropper-formats">
             <div>
-              <a href="javascript:;" @click.prevent="changeRatio(2.8,4)" class="btn-cropper-format is-3-4">Hoch 3x4</a>
+              <a href="javascript:;" @click.prevent="changeRatio(1,1)" class="btn-cropper-format is-3-4">1:1</a>
             </div>
             <div>
-              <a href="javascript:;" @click.prevent="changeRatio(4,2.8)" class="btn-cropper-format is-4-3">Quer 4x3</a>
-            </div>
-            <div>
-              <a href="javascript:;" @click.prevent="changeRatio(3,2)" class="btn-cropper-format is-4-3">Quer 3x2</a>
+              <a href="javascript:;" @click.prevent="changeRatio(16,9)" class="btn-cropper-format is-4-3">16:9</a>
             </div>
           </div>
           <div class="cropper-info">{{ cropW }} x {{ cropH }}px</div>
@@ -94,14 +91,12 @@
               href="javascript:;"
               class="btn-secondary has-icon"
               @click.prevent="hideCropper()">
-              <x-icon size="18"></x-icon>
               <span>Schliessen</span>
             </a>
             <a
               href="javascript:;"
               class="btn-primary has-icon"
               @click.prevent="saveCoords(overlayItem)">
-              <download-icon size="18"></download-icon>
               <span>Speichern</span>
             </a>
 
@@ -143,14 +138,12 @@
               href="javascript:;"
               class="btn-secondary has-icon"
               @click.prevent="hideEdit()">
-              <x-icon size="18"></x-icon>
               <span>Schliessen</span>
             </a>
             <a
               href="javascript:;"
               class="btn-primary has-icon"
               @click.prevent="update()">
-              <download-icon size="18"></download-icon>
               <span>Speichern</span>
             </a>
           </div>
