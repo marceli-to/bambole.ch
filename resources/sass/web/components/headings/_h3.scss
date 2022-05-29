@@ -5,5 +5,17 @@
  */
 
 h3 {
+  color: $color-dark;
+  @include font-londrina-black();
+  @include font-size($fs-md);
+  margin-bottom: $space-3x;
+  text-align: center;
 
+  @include bp-sm() {
+    margin-bottom: $space-4x;
+  }
+
+  @include bp-lg() {
+    margin-bottom: $space-5x;
+  }
 }

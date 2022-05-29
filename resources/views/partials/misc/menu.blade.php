@@ -22,7 +22,13 @@
         <a href="#bambolini" class="">Bambolini</a>
       </li>
       <li>
+        <a href="#awarness" class="">Awarness</a>
+      </li>
+      <li>
         <a href="#faq" class="">FAQ</a>
+      </li>
+      <li>
+        <a href="#medienpartner">Medienpartner</a>
       </li>
       <li>
         <a href="#kontakt" class="">Kontakt</a>

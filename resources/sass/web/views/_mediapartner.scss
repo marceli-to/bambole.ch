@@ -1,0 +1,19 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/mediapartner
+ * -----------------------------------------------------------------------------
+ */
+
+.media-partner {
+  a {
+    @extend %mx-auto;
+    display: block !important;
+    background: none !important;
+    text-decoration: none !important;
+    width: 160px;
+
+    @include bp-md() {
+      width: 240px;
+    }
+  }
+}

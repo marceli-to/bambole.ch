@@ -23,7 +23,7 @@ class PageController extends BaseController
   public function index()
   {
     $data = [
-      'duties' => Duty::orderBy('description')->get(),
+      //'duties' => Duty::orderBy('description')->get(),
       'faqs' => Faq::published()->get(),
     ];
 
