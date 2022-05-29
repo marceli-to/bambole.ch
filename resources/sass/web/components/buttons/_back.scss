@@ -1,0 +1,26 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/buttons/back
+ * -----------------------------------------------------------------------------
+ */
+
+.btn-back {
+  display: block;
+  height: 20px;
+  width: 20px;
+
+  @include bp-md() {
+    height: 28px;
+    width: 28px;
+  }
+
+  @include bp-lg() {
+    height: 36px;
+    width: 36px;
+  }
+
+  svg {
+    @extend %is-responsive;
+  }
+}
+

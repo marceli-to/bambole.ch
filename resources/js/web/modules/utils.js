@@ -17,6 +17,12 @@ var Utils = (function() {
   // Init
   var _initialize = function() {
     _bind();
+    // check for hash
+    let hash = window.location.hash;
+    if (hash) {
+      hash = hash.substring(1,hash.length);
+      _jumpTo(hash);
+    }
   };
 
   // Bind events
@@ -30,8 +36,23 @@ var Utils = (function() {
     });
 
     var lazyLoadInstance = new LazyLoad();
+
+    $(window).on('hashchange', function(e) {
+      let hash = window.location.hash;
+      if (hash) {
+        hash = hash.substring(1,hash.length);
+        _jumpTo(hash);
+      }
+    });
+
   };
 
+  var _jumpTo = function(hash) {
+    var el = document.getElementById(hash);
+    setTimeout(function(){
+      el.scrollIntoView({block: "start", behavior: "auto"});
+    }, 500)
+  };
 
   /* --------------------------------------------------------------
     * RETURN PUBLIC METHODS

@@ -23,4 +23,22 @@
   }
 }
 
+%inner-block-small,
+.inner-block-small {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $space-3x;
+  padding-right: $space-3x;
+
+  @include bp-sm() {
+    padding-left: $space-10x;
+    padding-right: $space-10x;
+    max-width: 900px;
+  }
+
+  @include bp-md() {
+    max-width: 1200px;
+  }
+}
+
 

@@ -31,12 +31,14 @@
 @import 'components/boxes/global';
 @import 'components/boxes/ratio';
 @import 'components/buttons/global';
+@import 'components/buttons/back';
 @import 'components/buttons/primary';
 @import 'components/buttons/menu';
 @import 'components/buttons/submit';
 @import 'components/cards';
 @import 'components/collapsible';
 @import 'components/icons/global';
+@import 'components/icons/band';
 @import 'components/icons/heart';
 @import 'components/headings/global';
 @import 'components/headings/h1';
@@ -71,6 +73,7 @@
 
 // Views
 @import 'views/auth';
+@import 'views/bands';
 @import 'views/intro';
 @import 'views/mediapartner';
 @import 'views/imprint';

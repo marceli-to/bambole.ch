@@ -1,0 +1,232 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/bands
+ * -----------------------------------------------------------------------------
+ */
+
+.bands {
+  @extend %pb-4x;
+  padding-left: 0;
+}
+
+article.band-teaser {
+  @extend %mb-4x;
+  background-color: $color-white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0 !important;
+
+  @include bp-sm() {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &:last-of-type {
+    margin-bottom: 0 !important;
+  }
+
+  a:not(.icon-band) {
+    color: $color-dark;
+    display: block;
+    transition: color .1s ease-in;
+    * {
+      transition: color .1s ease-in;
+    }
+
+    &:hover {
+      color: $color-primary;
+      * {
+        color: $color-primary;
+      }
+    }
+  }
+
+  > figure {
+    img {
+      @extend %is-responsive;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  > div {
+    @include font-size($fs-xs);
+    padding: $space-2x;
+    position: relative;
+
+    @include bp-md() {
+      padding: $space-3x;
+    }
+
+    h3 {
+      @extend %word-break;
+      @extend %mt-1x;
+      @extend %sm\:mt-3x;
+      text-align: left;
+      @include font-size($fs-xl);
+      padding-bottom: 32px;
+    }
+
+    h4 {
+      color: $color-dark;
+      @include font-londrina-black();
+      @include font-size($fs-sm);
+      margin-bottom: 0;
+    }
+
+    .band-teaser__links {
+      bottom: $space-2x;
+      display: none;
+      position: absolute;
+      right: $space-2x;
+      
+      @include bp-sm() {
+        display: block;
+      }
+
+      @include bp-md() {
+        bottom: $space-3x;
+        right: $space-3x;
+      }
+
+      > div {
+        display: flex;
+      }
+    }
+  }
+}
+
+section.band {
+  padding-bottom: $space-4x;
+  padding-top: $space-4x;
+  position: relative;
+
+  @include bp-lg() {
+    padding-bottom: $space-6x;
+    padding-top: $space-6x;
+  }
+
+  nav.browse {
+    margin-top: $space-4x;
+
+    @include bp-md() {
+      margin-top: $space-6x;
+    }
+
+    @include bp-lg() {
+      margin-top: $space-8x;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      align-items: center;
+      color: $color-primary;
+      @include font-londrina-black();
+      @include font-size($fs-md);
+      line-height: 1 !important;
+      display: flex;
+      text-transform: uppercase;
+
+      span {
+        display: block;
+      }
+
+      svg {
+        display: block;
+        height: auto;
+        width: 20px;
+
+        @include bp-md() {
+          width: 30px;
+        }
+
+        @include bp-lg() {
+          width: 40px;
+        }
+      }
+    }
+
+    li:first-of-type a {
+      span {
+        margin-left: $space-2x;
+        
+        @include bp-md() {
+          margin-left: $space-3x;
+        }
+      }
+    }
+
+    li:last-of-type a {
+      span {
+        margin-right: $space-2x;
+                
+        @include bp-md() {
+          margin-right: $space-3x;
+        }
+      }
+    }
+  }
+
+  article {
+
+    h1 {
+      color: $color-dark;
+      margin-bottom: $space-2x;
+
+      @include bp-sm() {
+        margin-bottom: $space-2x;
+      }
+    
+      @include bp-lg() {
+        margin-bottom: $space-4x;
+      }
+    }
+  
+    h2 {
+      @include font-size($fs-sm);
+      @include font-bold();
+      text-transform: uppercase;
+      margin-bottom: $space-2x;
+      
+      @include bp-sm() {
+        margin-bottom: $space-2x;
+      }
+    
+      @include bp-lg() {
+        margin-bottom: $space-4x;
+      }
+      em {
+        color: $color-primary;
+      }
+    }
+
+    .band__links {
+      > div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    figure {
+      margin-top: $space-4x;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include bp-md() {
+        margin-top: $space-6x;
+        max-width: 500px;
+      }
+      @include bp-md() {
+        margin-top: $space-10x;
+      }
+
+
+    }
+  }
+
+}

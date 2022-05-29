@@ -12,6 +12,13 @@ main.site {
   }
 }
 
+main.site-band {
+  > div {
+    @extend %inner-block-small;
+    position: relative;
+  }
+}
+
 main.site-auth {
   min-height: 100vh;
 

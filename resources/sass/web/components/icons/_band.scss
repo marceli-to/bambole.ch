@@ -1,0 +1,35 @@
+/**
+ * -----------------------------------------------------------------------------
+ * component/icons/heart
+ * -----------------------------------------------------------------------------
+ */
+
+a.icon-band {
+  align-items: center;
+  background-color: $color-dark;
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  padding: 6px;
+  width: 32px;
+  
+  @include bp-lg() {
+    height: 42px;
+    padding: 8px;
+    width: 42px;
+  }
+    
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  &:last-of-type {
+    margin-left: 4px;
+    @include bp-lg() {
+      margin-left: 8px;
+    }
+  }
+
+}
