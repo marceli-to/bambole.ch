@@ -30,7 +30,7 @@
                   </a>
                 @endif
                 @if ($band->youtube)
-                  <a href="{{$band->youtube}}" class="icon-band" target="_blank" title="Webseite {{$band->youtube}}">
+                  <a href="{{$band->youtube}}" class="icon-band is-youtube" target="_blank" title="Webseite {{$band->youtube}}">
                     <img src="/assets/img/sound.svg" height="40" width="40" alt="">
                   </a>
                 @endif

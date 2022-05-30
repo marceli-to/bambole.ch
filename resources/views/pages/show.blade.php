@@ -36,9 +36,8 @@
     @if ($band->description)
      {!! $band->description !!}
     @else
-    <p>Weitere Infos folgen in Kürze...</p>
+      <p>Weitere Infos folgen in Kürze...</p>
     @endif
-
     @if ($band->website || $band->youtube)
     <div class="band__links">
       <div>
@@ -48,7 +47,7 @@
           </a>
         @endif
         @if ($band->youtube)
-          <a href="{{$band->youtube}}" class="icon-band" target="_blank" title="Webseite {{$band->youtube}}">
+          <a href="{{$band->youtube}}" class="icon-band is-youtube" target="_blank" title="Webseite {{$band->youtube}}">
             <img src="/assets/img/sound.svg" height="40" width="40" alt="">
           </a>
         @endif
