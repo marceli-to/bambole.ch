@@ -2,7 +2,7 @@
   <div>
     <h1>Samstag</h1>
     <h2>6. August 2022</h2>
-    <p>Gelände offen ab 13 Uhr</p>
+    <p>Gelände offen ab 11 Uhr</p>
     @foreach($bands_daytwo as $band)
       <article class="band-teaser" id="{{ \Str::slug($band->name) }}">
         <figure>
