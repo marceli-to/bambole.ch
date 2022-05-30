@@ -35,6 +35,8 @@
     <h2>@if ($band->day == 1) Freitag <em>/</em> 5.8.2022 @else Samstag <em>/</em> 6.8.2022 @endif <em>/</em> {{ $band->time_start_full }} Uhr <em>/</em> {{ $band->stage->name }}</h2>
     @if ($band->description)
      {!! $band->description !!}
+    @else
+    <p>Weitere Infos folgen in Kürze...</p>
     @endif
 
     @if ($band->website || $band->youtube)

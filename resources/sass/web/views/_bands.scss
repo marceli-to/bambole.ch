@@ -11,9 +11,10 @@
 
 article.band-teaser {
   @extend %mb-4x;
+  aspect-ratio: 2 / 1;
   background-color: $color-white;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   padding: 0 !important;
 
   @include bp-sm() {
@@ -41,6 +42,7 @@ article.band-teaser {
   }
 
   > figure {
+    background-color: $color-medium;
     img {
       @extend %is-responsive;
       object-fit: cover;
@@ -174,6 +176,7 @@ section.band {
   article {
 
     h1 {
+      @extend %word-break;
       color: $color-dark;
       margin-bottom: $space-2x;
 
