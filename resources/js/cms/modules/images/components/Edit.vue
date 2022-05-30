@@ -62,14 +62,14 @@
       </div>
       <div class="upload-overlay-cropper__wrapper" v-if="!isLoading">
         <div :class="'is-' + overlayItem.orientation">
-          <div class="cropper-formats">
+          <!-- <div class="cropper-formats">
             <div>
               <a href="javascript:;" @click.prevent="changeRatio(1,1)" class="btn-cropper-format is-3-4">1:1</a>
             </div>
             <div>
               <a href="javascript:;" @click.prevent="changeRatio(16,9)" class="btn-cropper-format is-4-3">16:9</a>
             </div>
-          </div>
+          </div> -->
           <div class="cropper-info">{{ cropW }} x {{ cropH }}px</div>
           <cropper
             :src="cropImage"
@@ -189,12 +189,12 @@ export default {
 
     ratioW: {
       type: Number,
-      default: 3
+      default: 1
     },
 
     ratioH: {
       type: Number,
-      default: 2
+      default: 1
     },
 
     allowRatioSwitch: {

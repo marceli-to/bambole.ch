@@ -74,8 +74,8 @@
     </div>
     <div v-show="tabs.image.active">
       <images 
-        :imageRatioW="3" 
-        :imageRatioH="2"
+        :imageRatioW="1" 
+        :imageRatioH="1"
         :images="data.images">
       </images>
     </div>
