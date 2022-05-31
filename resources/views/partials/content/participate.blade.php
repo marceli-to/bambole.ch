@@ -11,8 +11,6 @@
       <span>Melde dich an!</span>
     </a>
   </h2>
-
-
 </article>
 
 
