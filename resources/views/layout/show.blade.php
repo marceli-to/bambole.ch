@@ -11,6 +11,7 @@
 <meta property="og:url" content="{{url()->current()}}">
 <meta property="og:image" content="@if(trim($__env->yieldContent('og_image')))@yield('og_image')@else{{ asset('assets/img/faw-og.png') }}@endif">
 <meta property="og:site_name" content="{{config('seo.title')}}">
+<meta name="color-scheme" content="dark light">
 @include('partials.misc.favicon')
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 <meta name="format-detection" content="telephone=no">

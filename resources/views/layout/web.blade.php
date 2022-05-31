@@ -9,6 +9,7 @@
 <meta property="og:description" content="{{config('seo.description')}}">
 <meta property="og:url" content="https://www.bambole.ch">
 <meta property="og:site_name" content="{{config('seo.title')}}">
+<meta name="color-scheme" content="dark light">
 @include('partials.misc.favicon')
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 <meta name="format-detection" content="telephone=no">
