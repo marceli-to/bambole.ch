@@ -37,7 +37,7 @@ header.site-header {
     left: $space-5x;
     position: absolute;
     top: $space-5x;
-
+    z-index: 100;
     @include bp-sm() {
       left: $space-10x;
       top: $space-10x;
