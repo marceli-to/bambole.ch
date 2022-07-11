@@ -16,6 +16,9 @@
         <a href="#machmit" class="">Mach mit!</a>
       </li>
       <li>
+        <a href="#kunst-am-bambole" class="">Kunst am Bambole</a>
+      </li>
+      <li>
         <a href="#manifest" class="">Das Manifest</a>
       </li>
       <li>
