@@ -8,5 +8,6 @@
     <p>Das Bambolini! ist das neue Kinderprogramm am Bambole Openair. Am Freitag wie auch am Samstag öffnen wir die Türen für Familien bereits um 11 Uhr, damit die Kids und Teenager an unseren kostenlosen Workshops teilnehmen, den Spielbus nutzen und ein Kinderkonzert geniessen können. Die Workshops sind dabei auf Weiterbildung und Erlebnis, und nicht etwa auf Konsum ausgerichtet. Wie Radio machen, die Natur entdecken, Kochen lernen, basteln etc.</p>
     <p>Damit dieser neue Programmpunkt umsetzbar wird haben wir ein Crowdfunding gestartet. Den Link findet ihr <a href="https://www.lokalhelden.ch/bambolini" target="_blank" title="Crowdfundung Bambolini">hier</a>. Besten Dank für Deinen Support!</p>  
     <p><a href="https://ferienprogramm.ch/veranstaltungen/list/?tribe-bar-search=bambole" title="Anmeldung Bambolini Workshops" target="_blank">Hier</a> könnt ihr eure Kids für unsere kostenlosen Workshops anmelden!</p>
+    <p class="text-xxs">Mit Unterstützung von <a href="https://ferienprogramm.ch" target="_blank" title="ferienprogramm.ch">ferienprogramm.ch</a></p>
   </div>
 </article>

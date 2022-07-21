@@ -32,6 +32,12 @@
   @include font-londrina-black();
 }
 
+
+.text-xxs {
+  @include font-size($fs-xxs);
+}
+
+
 .text-xl {
   @include font-size($fs-xl);
 }
