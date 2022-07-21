@@ -174,7 +174,9 @@ section.band {
   }
 
   article {
-
+    a {
+      @extend %anchor;
+    }
     h1 {
       @extend %word-break;
       color: $color-dark;
