@@ -8,6 +8,7 @@
 <meta property="og:title" content="{{config('seo.title')}}">
 <meta property="og:description" content="{{config('seo.description')}}">
 <meta property="og:url" content="https://www.bambole.ch">
+<meta property="og:image" content="https://www.bambole.ch/assets/img/og.png">
 <meta property="og:site_name" content="{{config('seo.title')}}">
 <meta name="color-scheme" content="dark light">
 @include('partials.misc.favicon')
