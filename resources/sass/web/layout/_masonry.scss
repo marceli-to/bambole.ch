@@ -28,6 +28,7 @@
 
     &.overlap {
       margin-top: 40px;
+      scroll-margin-top: 40px;
 
       > div {
         margin-top: -40px;
@@ -39,6 +40,7 @@
 
       @include bp-md() {
         margin-top: 60px;
+        scroll-margin-top: 40px;
 
         > div {
           margin-top: -60px;

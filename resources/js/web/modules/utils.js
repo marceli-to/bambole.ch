@@ -49,9 +49,7 @@ var Utils = (function() {
 
   var _jumpTo = function(hash) {
     var el = document.getElementById(hash);
-    setTimeout(function(){
-      el.scrollIntoView({block: "start", behavior: "auto"});
-    }, 500)
+    el.scrollIntoView({block: "start", behavior: "auto"});
   };
 
   /* --------------------------------------------------------------
