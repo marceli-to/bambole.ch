@@ -17,12 +17,17 @@ class BandController extends Controller
    */
   public function get($constraint = NULL)
   {
-    $bands_dayone = Band::dayOne()->with('stage')->orderBy('order')->get();
-    $bands_daytwo = Band::dayTwo()->with('stage')->orderBy('order')->get();
+    $bands = Band::soli()->with('stage')->orderBy('order')->get();
     return response()->json([
-      'dayone' => $bands_dayone,
-      'daytwo' => $bands_daytwo
+      'soli' => $bands,
     ]);
+
+    // $bands_dayone = Band::dayOne()->with('stage')->orderBy('order')->get();
+    // $bands_daytwo = Band::dayTwo()->with('stage')->orderBy('order')->get();
+    // return response()->json([
+    //   'dayone' => $bands_dayone,
+    //   'daytwo' => $bands_daytwo
+    // ]);
   }
 
   /**

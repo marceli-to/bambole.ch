@@ -43,6 +43,15 @@ class Band extends Base
   }
 
 	/**
+   * Scope for bands on soli konzo
+   */
+
+   public function scopeSoli($query)
+   {
+     return $query->where('day', 0);
+   }
+
+	/**
    * Scope for bands on day one
    */
 
