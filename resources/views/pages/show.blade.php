@@ -32,7 +32,7 @@
   </header>
   <article>
     <h1>{{ $band->name }}</h1>
-    <h2>Samstag <em>/</em> 9.9.2023 <em>/</em> {{ $band->time_start_full }} Uhr <em>/</em></h2>
+    <h2>Samstag <em>/</em> 9.9.2023 <em>/</em> {{ $band->time_start_full }} Uhr</h2>
     {{-- <h2>@if ($band->day == 1) Freitag <em>/</em> 5.8.2022 @else Samstag <em>/</em> 6.8.2022 @endif <em>/</em> {{ $band->time_start_full }} Uhr <em>/</em> {{ $band->stage->name }}</h2> --}}
     @if ($band->description)
      {!! $band->description !!}
