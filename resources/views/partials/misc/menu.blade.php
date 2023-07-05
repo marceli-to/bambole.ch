@@ -10,7 +10,7 @@
         <a href="#bands" class="">Bands</a>
       </li> --}}
       <li>
-        <a href="#konzert" class="">Soli-Konzert</a>
+        <a href="#konzert" class="">Konzert</a>
       </li>
       <li>
         <a href="#jobs" class="">Jobs</a>
