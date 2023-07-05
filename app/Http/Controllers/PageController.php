@@ -24,8 +24,9 @@ class PageController extends BaseController
   {
     $data = [
       'faqs' => Faq::published()->get(),
-      'bands_dayone' => Band::published()->dayOne()->with('image','stage')->orderBy('order')->get(),
-      'bands_daytwo' => Band::published()->dayTwo()->with('image', 'stage')->orderBy('order')->get()
+      'bands' => Band::published()->soli()->with('stage')->orderBy('order')->get(),
+      // 'bands_dayone' => Band::published()->dayOne()->with('image','stage')->orderBy('order')->get(),
+      // 'bands_daytwo' => Band::published()->dayTwo()->with('image', 'stage')->orderBy('order')->get()
     ];
 
     return view($this->viewPath . 'index', $data);
