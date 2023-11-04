@@ -1,0 +1,78 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/privacy
+ * -----------------------------------------------------------------------------
+ */
+
+ section.privacy {
+  margin-bottom: $space-5x;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include bp-sm() {
+    margin-bottom: $space-10x;
+  }
+
+  h1, 
+  h2, 
+  h3,
+  ul,
+  p {
+    text-transform: none;
+    text-align: left !important;
+  }
+
+  p, ul {
+    @include font-size($fs-xs);
+    margin-bottom: $space-4x;
+    max-width: 900px;
+    line-height: 1.6 !important;
+  }
+
+  ul {
+    margin-bottom: $space-6x;
+  }
+
+  ul, li {
+    list-style: disc;
+    padding-left: $space-2x;
+  }
+
+  li {
+    margin-left: $space-4x;
+    display: list-item;
+  }
+
+  h1 {
+    @include font-size($fs-xl);
+  }
+
+  h2 {
+    @include font-size($fs-md);
+    margin-bottom: $space-2x;
+    @include bp-sm() {
+      margin-bottom: $space-3x;
+    }
+    
+   @include bp-lg() {
+      margin-bottom: $space-4x;
+    }
+  }
+
+  h3 {
+    @include font-size($fs-lg);
+    @include font-londrina-regular();
+  }
+  
+  a {
+    @extend %anchor;
+    background-color: transparent !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}

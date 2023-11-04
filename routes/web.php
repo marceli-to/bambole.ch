@@ -41,6 +41,9 @@ Route::get('/band/{band}/{slug?}', [PageController::class, 'show'])->name('page.
 
 Route::post('/register', [BackerController::class, 'store']);
 
+// View route to privacy.blade
+Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
+
 // Url based images
 Route::get('/img/{template}/{filename}/{maxW?}/{maxH?}/{coords?}', [ImageController::class, 'getResponse']);
 
