@@ -4,8 +4,15 @@
  * -----------------------------------------------------------------------------
  */
 
-%hr
-.hr
+%hr,
+.hr,
 hr {
-
+  background-color: $color-white;
+  border: none;
+  height: 1px;
+  margin-bottom: $space-4x;
+  padding: 0;
+  @include bp-lg() {
+    margin-bottom: $space-6x;
+  }
 }
