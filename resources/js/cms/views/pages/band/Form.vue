@@ -29,18 +29,17 @@
           <label>Youtube</label>
           <input type="text" v-model="data.youtube">
         </div>
-        <!-- <div class="form-row">
+        <div class="form-row">
           <label>Tag</label>
           <div class="select-wrapper">
             <select name="day" v-model="data.day" :class="[errors.day ? 'is-invalid' : '']">
               <option value="null">Bitte wählen...</option>
-              <option value="0">Samstag, 9.9.</option>
-              <option value="1">Freitag, 5.8.</option>
-              <option value="2">Samstag, 6.8.</option>
+              <option value="1">Freitag, 2.8.</option>
+              <option value="2">Samstag, 3.8.</option>
             </select>
           </div> 
-        </div> -->
-        <!-- <div :class="[this.errors.stage_id ? 'has-error' : '', 'form-row']">
+        </div>
+        <div :class="[this.errors.stage_id ? 'has-error' : '', 'form-row']">
           <label>Bühne</label>
           <div class="select-wrapper">
             <select name="stages" v-model="data.stage_id">
@@ -48,7 +47,7 @@
               <option v-for="stage in stages" :key="stage.id" :value="stage.id">{{stage.name}}</option>
             </select>
           </div>
-        </div> -->
+        </div>
         <div class="grid grid-cols-12 mt-6x">
           <div class="span-6">
             <label>Beginn</label>

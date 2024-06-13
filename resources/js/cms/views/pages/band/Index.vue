@@ -10,40 +10,9 @@
         <span>Hinzufügen</span>
       </router-link>
     </page-header>
-
-    <div v-if="data.soli">
-      <div>
-        <h2 class="mb-2x">Samsatg, 9.9.</h2>
-        <draggable 
-          :disabled="false"
-          v-model="data.soli" 
-          @end="order(data.soli)"
-          ghost-class="draggable-ghost"
-          draggable=".listing__item"
-          class="listing"
-          v-if="data.soli.length">
-          <div
-            :class="[d.publish == 0 ? 'is-disabled' : '', 'listing__item is-draggable']"
-            v-for="d in data.soli"
-            :key="d.id"
-          >
-            <div class="listing__item-body">
-              {{d.name}} <separator /> {{ d.time_start_full}} – {{ d.time_end_full }} <separator /> {{ d.stage.name }}
-            </div>
-            <list-actions 
-              :id="d.id" 
-              :record="d"
-              :hasDraggable="true"
-              :routes="{edit: 'band-edit'}">
-            </list-actions>
-          </div>
-        </draggable>
-      </div>
-    </div>
-
     <div v-if="data.dayone">
       <div>
-        <h2 class="mb-2x">Freitag, 5.8.</h2>
+        <h2 class="mb-2x">Freitag, 2.8.</h2>
         <draggable 
           :disabled="false"
           v-model="data.dayone" 
@@ -71,7 +40,7 @@
     </div>
     <div v-if="data.daytwo" class="mt-10x">
       <div>
-        <h2 class="mb-2x">Samstag, 6.8.</h2>
+        <h2 class="mb-2x">Samstag, 3.8.</h2>
         <draggable 
           :disabled="false"
           v-model="data.daytwo" 
@@ -136,7 +105,6 @@ export default {
       data: {
         dayone: null,
         daytwo: null,
-        soli: null,
       },
 
       // Routes
@@ -171,7 +139,6 @@ export default {
       this.axios.get(`${this.routes.get}`).then(response => {
         this.data.dayone = response.data.dayone;
         this.data.daytwo = response.data.daytwo;
-        this.data.soli = response.data.soli;
         this.isFetched = true;
       });
     },
