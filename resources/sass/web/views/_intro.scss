@@ -22,6 +22,7 @@ section.intro {
 
   h1 {
     @include font-size($fs-xl);
+    color: $color-primary;
   }
 
   h2 {

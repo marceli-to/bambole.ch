@@ -5,15 +5,24 @@
  */
 
 .theme-dark {
-  background-color: $color-dark;
+  background-color: $color-secondary;
   color: $color-white;
 
   h1 {
-    color: $color-primary;
+    color: $color-white;
   }
 
   h2 {
     color: $color-white;
+  }
+
+  .btn-primary {
+    background-color: $color-white;
+
+    &:hover {
+      background-color: $color-dark;
+      color: $color-white;
+    }
   }
 }
 

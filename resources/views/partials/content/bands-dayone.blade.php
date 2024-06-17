@@ -1,7 +1,7 @@
 <article class="theme-medium overlap masonry-item bands" id="bands">
   <div>
     <h1>Freitag</h1>
-    <h2>5. August 2022</h2>
+    <h2>2. August 2024</h2>
     <p>Gelände offen ab 11 Uhr</p>
     @foreach($bands_dayone as $band)
       <article class="band-teaser" id="{{ \Str::slug($band->name) }}">

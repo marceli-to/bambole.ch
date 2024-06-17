@@ -3,13 +3,13 @@
 @include('partials.content.intro')
   <section class="content masonry">
     {{-- @include('partials.content.bands') --}}
-    {{-- @include('partials.content.bands-dayone') --}}
-    {{-- @include('partials.content.bands-daytwo') --}}
+    @include('partials.content.bands-dayone')
+    @include('partials.content.bands-daytwo')
     @include('partials.content.participate')
     {{-- @include('partials.content.jobs') --}}
     @include('partials.content.donate')
     @include('partials.content.manifest')
-    {{-- @include('partials.content.art') --}}
+    @include('partials.content.art')
     @include('partials.content.contact')
     @include('partials.content.faq')
     @include('partials.content.awarness')

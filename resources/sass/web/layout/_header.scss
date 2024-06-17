@@ -27,7 +27,7 @@ header.site-header {
       margin-top: 40px;
     }
 
-    img {
+    img, svg {
       @extend %is-responsive;
     }
   }
