@@ -8,11 +8,12 @@
         <figure>
           @if ($band->image)
             <img 
-              data-src="/img/cache/{{ $band->image->name }}/600/{{ $band->image->coords }}/1x1" 
+              src="/img/cache/{{ $band->image->name }}/600/{{ $band->image->coords }}/1x1" 
               width="300" 
               height="300"
               title="{{ $band->name }}"
-              class="is-responsive lazy">
+              loading="lazy"
+              class="is-responsive">
           @endif          
         </figure>
         <div>
