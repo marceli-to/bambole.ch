@@ -9,8 +9,8 @@
           @if ($band->image)
             <img 
               data-src="/img/cache/{{ $band->image->name }}/600/{{ $band->image->coords }}/1x1" 
-              width="600" 
-              height="600"
+              width="300" 
+              height="300"
               title="{{ $band->name }}"
               class="is-responsive lazy">
           @endif          
