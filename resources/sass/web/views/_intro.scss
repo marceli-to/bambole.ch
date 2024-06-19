@@ -5,10 +5,10 @@
  */
 
 section.intro {
-  margin-bottom: $space-5x;
+  margin: $space-5x 0 $space-10x 0;
   
   @include bp-sm() {
-    margin-bottom: $space-10x;
+    margin: $space-10x 0 $space-15x 0;
   }
 
   h1, 
@@ -21,8 +21,13 @@ section.intro {
   }
 
   h1 {
-    @include font-size($fs-xl);
-    color: $color-primary;
+    @include font-size($fs-2xl);
+    color: $color-black;
+
+    em {
+      color: $color-secondary;
+      white-space: nowrap;
+    }
   }
 
   h2 {
