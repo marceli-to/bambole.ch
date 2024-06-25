@@ -1,11 +1,12 @@
 export default {
-  skin_url: '/assets/js/cms/tinymce/skins/custom',
+  license_key: 'gpl',
+  // skin_url: '/assets/js/cms/tinymce/skins/custom',
   branding: false,
   menubar: false,
   statusbar: false,
-  external_plugins: {
-    link: '/assets/js/cms/tinymce/plugins/link/plugin.min.js',
-  },
+  // external_plugins: {
+  //   link: '/assets/js/cms/tinymce/plugins/link/plugin.min.js',
+  // },
   plugins: ['lists', 'code', 'link'],
   toolbar: 'undo redo | bold | bullist | link | superscript | removeformat | styleselect | code',
   paste_as_text: true,
@@ -24,5 +25,5 @@ export default {
     ],
   }],
 
-  link_list: '/filelist',
+  // link_list: '/filelist',
 };
