@@ -2,9 +2,9 @@
 @section('content')
 @include('partials.content.intro')
   <section class="content masonry">
+    @include('partials.content.participate')
     @include('partials.content.bands-dayone')
     @include('partials.content.bands-daytwo')
-    @include('partials.content.participate')
     @include('partials.content.bambolini')
     {{-- @include('partials.content.jobs') --}}
     @include('partials.content.donate')

@@ -12,15 +12,15 @@
       <li>
         <a href="#konzert" class="">Konzert</a>
       </li>
-      <li>
+      {{-- <li>
         <a href="#jobs" class="">Jobs</a>
-      </li>
+      </li> --}}
       <li>
         <a href="#spenden" class="">Spenden</a>
       </li>
-      {{-- <li>
+      <li>
         <a href="#machmit" class="">Mach mit!</a>
-      </li> --}}
+      </li>
       {{-- <li>
         <a href="#kunst-am-bambole" class="">Kunst am Bambole</a>
       </li> --}}
