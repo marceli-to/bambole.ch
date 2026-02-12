@@ -3,7 +3,7 @@
   <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="52.2" height="52.3" viewBox="0 0 52.2 52.3"><path fill="currentColor" d="M6.3 52l1-1 19.4-19.1 2.5-2.5c10.6-10.5 18.3-18.1 23-22.8-1-.7-2.2-1.6-3.4-2.8l-.9-1.1-.9-.9-.8-1-.9-.8L0 45.3l.4.4 1.4 1.5L6.3 52z"/><path fill="currentColor" d="M0 6.3l1 1.1 19.2 19.4 2.5 2.5c10.5 10.6 18.1 18.3 22.8 23 .6-1.1 1.5-2.2 2.7-3.4l1.1-.9.9-.9 1-.8.8-.8L6.7 0l-.4.4-1.5 1.4L0 6.3z"/></svg>
 </a>
 <nav class="site js-menu">
-  @include('partials.misc.claim')
+  {{-- @include('partials.misc.claim') --}}
   <div class="site-menu-wrapper">
     <ul>
       <li>
