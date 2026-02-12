@@ -17,7 +17,7 @@
         <div>
           <a href="{{ route('page.show', ['band' => $band->id, 'slug' => \Str::slug($band->name)]) }}" class="btn-band" title="{{$band->name}}">
             <h4>Samstag ab {{$band->time_start_full}} Uhr</h4>
-            {{-- <span>{{$band->stage->name}}</span> --}}
+            <span>{{$band->stage->name}}</span>
             <h3>{{$band->name}}</h3>
           </a>
           @if ($band->website || $band->youtube)
