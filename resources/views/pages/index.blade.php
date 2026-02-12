@@ -4,8 +4,8 @@
   <section class="content masonry">
 
     @include('partials.content.participate')
-    @include('partials.content.bands-dayone')
-    @include('partials.content.bands-daytwo')
+    {{-- @include('partials.content.bands-dayone')
+    @include('partials.content.bands-daytwo') --}}
     @include('partials.content.bambolini')
 
     @include('partials.content.jobs')

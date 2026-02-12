@@ -6,9 +6,9 @@
   {{-- @include('partials.misc.claim') --}}
   <div class="site-menu-wrapper">
     <ul>
-      <li>
+      {{-- <li>
         <a href="#bands" class="">Bands</a>
-      </li>
+      </li> --}}
       <li>
         <a href="#konzert" class="">Konzert</a>
       </li>
