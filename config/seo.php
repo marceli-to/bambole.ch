@@ -11,7 +11,7 @@ return [
   |
   */
 
-  'title' => 'Bambole Openair',
+  'title' => 'Bambole Openair – 30. Juli bis 1. August 2026',
 
   /*
   |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
   |
   */
 
-  'description' => 'Das Bambole kehrt 2024 zurück!',
+  'description' => 'Bambole Openair – 30. Juli bis 1. August 2026',
   /*
   |--------------------------------------------------------------------------
   | Seo keywords
