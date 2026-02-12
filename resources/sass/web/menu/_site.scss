@@ -5,7 +5,6 @@
  */
 
 nav.site {
-  align-items: center;
   background-color: $color-dark;
   display: flex;
   height: 100%;
@@ -20,6 +19,10 @@ nav.site {
   width: 100%;
   transition: opacity .2s ease-in;
   z-index: -1;
+
+  .site-menu-wrapper {
+    margin: auto;
+  }
 
   &.is-visible {
     opacity: 1;
