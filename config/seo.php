@@ -22,7 +22,7 @@ return [
   |
   */
 
-  'description' => 'Bambole Openair – 30. Juli bis 1. August 2026',
+  'description' => 'Das finale Bambole Openair in Winterthur – 30. Juli bis 1. August 2026. Musik, Kunst und Kinderprogramm bei freiem Eintritt.',
   /*
   |--------------------------------------------------------------------------
   | Seo keywords
