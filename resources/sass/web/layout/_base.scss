@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	background-color: $color-white;
+	background-color: $color-secondary;
 	color: $color-dark;
 	@include font-smoothing();
 	@include font-regular();
@@ -20,14 +20,14 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: $color-white;
+    background-color: $color-secondary;
     color: $color-dark;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: $color-white;
+    background-color: $color-secondary;
     color: $color-dark;
   }
 }
