@@ -41,9 +41,16 @@ section.intro {
       margin-bottom: $space-4x;
     }
   }
+
+  figure {
+    display: flex;
+    justify-content: center;
+  }
   
   img {
     width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
     height: auto;
   }
 
