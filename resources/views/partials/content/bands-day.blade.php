@@ -1,24 +1,24 @@
-<article class="theme-medium overlap masonry-item pb-6x md:pb-8x" id="bands">
+<article class="theme-medium overlap masonry-item bands {{ $sectionClass ?? '' }}" @if(($anchor ?? false))id="bands"@endif>
   <div>
-    <h1>Samstag</h1>
-    <h2>3. August 2024</h2>
-    <p>Gelände offen ab 10 Uhr</p>
-    @foreach($bands_daytwo as $band)
+    <h1>{{ $weekday }}</h1>
+    <h2>{{ $date }}</h2>
+    @isset($open)<p>{{ $open }}</p>@endisset
+    @foreach($bands as $band)
       <article class="band-teaser" id="{{ \Str::slug($band->name) }}">
         <figure>
           @if ($band->image)
-            <img 
-              src="/img/cache/{{ $band->image->name }}/600/{{ $band->image->coords }}/1x1" 
-              width="300" 
+            <img
+              src="/img/cache/{{ $band->image->name }}/600/{{ $band->image->coords }}/1x1"
+              width="300"
               height="300"
               title="{{ $band->name }}"
               loading="lazy"
               class="is-responsive">
-          @endif          
+          @endif
         </figure>
         <div>
           <a href="{{ route('page.show', ['band' => $band->id, 'slug' => \Str::slug($band->name)]) }}" class="btn-band" title="{{$band->name}}">
-            <h4>Samstag ab {{$band->time_start_full}} Uhr</h4>
+            <h4>{{ $weekday }} ab {{$band->time_start_full}} Uhr</h4>
             <span>{{$band->stage->name}}</span>
             <h3>{{$band->name}}</h3>
           </a>

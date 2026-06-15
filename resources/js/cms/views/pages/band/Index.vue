@@ -12,10 +12,10 @@
     </page-header>
     <div v-if="data.dayone">
       <div>
-        <h2 class="mb-2x">Freitag, 2.8.</h2>
-        <draggable 
+        <h2 class="mb-2x">Donnerstag, 30.7.</h2>
+        <draggable
           :disabled="false"
-          v-model="data.dayone" 
+          v-model="data.dayone"
           @end="order(data.dayone)"
           ghost-class="draggable-ghost"
           draggable=".listing__item"
@@ -40,7 +40,7 @@
     </div>
     <div v-if="data.daytwo" class="mt-10x">
       <div>
-        <h2 class="mb-2x">Samstag, 3.8.</h2>
+        <h2 class="mb-2x">Freitag, 31.7.</h2>
         <draggable 
           :disabled="false"
           v-model="data.daytwo" 
@@ -59,6 +59,34 @@
             </div>
             <list-actions 
               :id="d.id" 
+              :record="d"
+              :routes="{edit: 'band-edit'}">
+            </list-actions>
+          </div>
+        </draggable>
+      </div>
+    </div>
+    <div v-if="data.daythree" class="mt-10x">
+      <div>
+        <h2 class="mb-2x">Samstag, 1.8.</h2>
+        <draggable
+          :disabled="false"
+          v-model="data.daythree"
+          @end="order(data.daythree)"
+          ghost-class="draggable-ghost"
+          draggable=".listing__item"
+          class="listing"
+          v-if="data.daythree.length">
+          <div
+            :class="[d.publish == 0 ? 'is-disabled' : '', 'listing__item is-draggable']"
+            v-for="d in data.daythree"
+            :key="d.id"
+          >
+            <div class="listing__item-body">
+              {{d.name}} <separator /> {{ d.time_start_full}} – {{ d.time_end_full }} <separator /> {{ d.stage.name }}
+            </div>
+            <list-actions
+              :id="d.id"
               :record="d"
               :routes="{edit: 'band-edit'}">
             </list-actions>
@@ -105,6 +133,7 @@ export default {
       data: {
         dayone: null,
         daytwo: null,
+        daythree: null,
       },
 
       // Routes
@@ -139,6 +168,7 @@ export default {
       this.axios.get(`${this.routes.get}`).then(response => {
         this.data.dayone = response.data.dayone;
         this.data.daytwo = response.data.daytwo;
+        this.data.daythree = response.data.daythree;
         this.isFetched = true;
       });
     },

@@ -34,8 +34,9 @@
           <div class="select-wrapper">
             <select name="day" v-model="data.day" :class="[errors.day ? 'is-invalid' : '']">
               <option value="null">Bitte wählen...</option>
-              <option value="1">Freitag, 2.8.</option>
-              <option value="2">Samstag, 3.8.</option>
+              <option value="1">Donnerstag, 30.7.</option>
+              <option value="2">Freitag, 31.7.</option>
+              <option value="3">Samstag, 1.8.</option>
             </select>
           </div> 
         </div>
@@ -144,7 +145,7 @@ export default {
         description: null,
         website: null,
         youtube: null,
-        day: 0,
+        day: 1,
         time_start: null,
         time_end: null,
         stage_id: 1,

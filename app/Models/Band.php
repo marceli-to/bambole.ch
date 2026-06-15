@@ -59,7 +59,7 @@ class Band extends Base
 	{
 		return $query->where('day', 1);
 	}
-  
+
 	/**
    * Scope for bands on day two
    */
@@ -67,6 +67,15 @@ class Band extends Base
 	public function scopeDayTwo($query)
 	{
 		return $query->where('day', 2);
+	}
+
+	/**
+   * Scope for bands on day three
+   */
+
+	public function scopeDayThree($query)
+	{
+		return $query->where('day', 3);
 	}
 
   /**

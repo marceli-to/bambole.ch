@@ -18,6 +18,18 @@ require('@/mixins/Filters');
 // Vue-Axios defaults
 Vue.axios.defaults.withCredentials = true;
 
+// Redirect to login when the session is no longer authenticated
+axios.interceptors.response.use(
+  response => response,
+  error => {
+    if (error.response && error.response.status === 401) {
+      window.location.href = '/login';
+      return new Promise(() => {});
+    }
+    return Promise.reject(error);
+  }
+);
+
 // Vue-Notifications
 import Notifications from 'vue-notification';
 Vue.use(Notifications);

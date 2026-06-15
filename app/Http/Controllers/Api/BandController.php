@@ -19,9 +19,11 @@ class BandController extends Controller
   {
     $bands_dayone = Band::dayOne()->with('stage')->orderBy('order')->get();
     $bands_daytwo = Band::dayTwo()->with('stage')->orderBy('order')->get();
+    $bands_daythree = Band::dayThree()->with('stage')->orderBy('order')->get();
     return response()->json([
       'dayone' => $bands_dayone,
-      'daytwo' => $bands_daytwo
+      'daytwo' => $bands_daytwo,
+      'daythree' => $bands_daythree
     ]);
   }
 

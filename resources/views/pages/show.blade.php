@@ -32,7 +32,7 @@
   </header>
   <article>
     <h1>{{ $band->name }}</h1>
-    <h2>@if ($band->day == 1) Freitag <em>/</em> 2.8.2024 @else Samstag <em>/</em> 3.8.2024 @endif <em>/</em> {{ $band->time_start_full }} Uhr <em>/</em> {{ $band->stage->name }}</h2>
+    <h2>@switch($band->day)@case(1)Donnerstag <em>/</em> 30.7.2026 @break @case(2)Freitag <em>/</em> 31.7.2026 @break @default Samstag <em>/</em> 1.8.2026 @endswitch<em>/</em> {{ $band->time_start_full }} Uhr <em>/</em> {{ $band->stage->name }}</h2>
     @if ($band->description)
      {!! $band->description !!}
     @else
