@@ -4,6 +4,6 @@
   <p>Mehr Infos folgen bald...</p>
   {{-- <img src="/assets/img/bambole.jpg" width="1500" height="1000" alt="Bambole Logo"> --}}
   <figure>
-    <img src="/assets/img/bambole-warm-up-party-30-05-2026.jpg" width="1440" height="1800" alt="Bambole Logo">
+    <img src="/assets/img/bambole-flyer-line-up.jpg" width="1440" height="1800" alt="Bambole Logo">
   </figure>
 </section>
