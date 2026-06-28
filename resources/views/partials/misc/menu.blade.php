@@ -10,16 +10,16 @@
         <a href="#bands" class="">Bands</a>
       </li> --}}
       <li>
-        <a href="#konzert" class="">Konzert</a>
+        <a href="#machmit" class="">Mach mit!</a>
       </li>
       <li>
-        <a href="#jobs" class="">Jobs</a>
+        <a href="#bambole-dinner" class="">Bambole-Dinner</a>
+      </li>
+      <li>
+        <a href="#bands" class="">Line-up</a>
       </li>
       <li>
         <a href="#spenden" class="">Spenden</a>
-      </li>
-      <li>
-        <a href="#machmit" class="">Mach mit!</a>
       </li>
       {{-- <li>
         <a href="#kunst-am-bambole" class="">Kunst am Bambole</a>
